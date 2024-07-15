@@ -5,6 +5,10 @@ services:
     build: .
     ports:
       - "5000:5000"
+    depends_on:
+      - mysql
+      - mongodb
+
   nginx:
     image: nginx:latest
     volumes:
@@ -13,3 +17,22 @@ services:
       - "80:80"
     depends_on:
       - flask
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
