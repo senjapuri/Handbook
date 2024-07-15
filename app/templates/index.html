@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Flask App</title>
 </head>
 <body>
-    <h1>Welcome to My Flask App!</h1>
-    <h3>Handbook website coming from Flask!.</h3>
+    <h1>Welcome, {{ username }}!</h1>
+    
+    <h2>MySQL Users:</h2>
+    <ul>
+        {% for user in mysql_users %}
+        <li>{{ user.username }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
 </body>
 </html>
