@@ -6,15 +6,7 @@
     <title>Flask App</title>
 </head>
 <body>
-    <h1>Welcome, {{ username }}!</h1>
-    
-    <h2>MySQL Users:</h2>
-    <ul>
-        {% for user in mysql_users %}
-        <li>{{ user.username }}</li>
-        {% endfor %}
-    </ul>
-
-    <a href="{{ url_for('logout') }}">Logout</a>
+    <h1>MySQL Connection Status</h1>
+    <p>{{ connection_status }}</p>
 </body>
 </html>
