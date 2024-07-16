@@ -8,4 +8,5 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 -- Example user, password should be hashed using Werkzeug or similar tool
-INSERT INTO users (username, password) VALUES ('john_doe', 'hashedpassword');
+INSERT INTO users (id, username, password)
+VALUES (1, 'akshayvv', '$2b$12$rqb82tZ.Doe9KiaKRT1JtuyuOW808N.vNCpMLH2qjklLWaHpJIxZG');
