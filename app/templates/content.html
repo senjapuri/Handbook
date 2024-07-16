@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Handbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: none;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .left-pane {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .center-pane {
+            flex: 2;
+            padding: 20px;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .right-pane {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            border-left: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .right-pane-top {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #loginForm {
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 300px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        #loginForm input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        #loginForm button {
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+        .back-home {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+        <p id="loginMessage"></p>
+    </form>
 
+    <div class="container">
+        <div class="left-pane">
+            <h2>Navigation</h2>
+            <input type="text" placeholder="Search...">
+            <h3>What to do if...</h3>
+            <ul>
+                <li><input type="radio" name="situation" value="phishing"> Phishing Attack</li>
+                <li><input type="radio" name="situation" value="ransomware"> Ransomware Attack</li>
+                <li><input type="radio" name="situation" value="apts"> Advanced Persistent Threats (APTs)</li>
+                <li><input type="radio" name="situation" value="dos"> DoS/DDoS Attack</li>
+                <li><input type="radio" name="situation" value="insider"> Insider Threat</li>
+                <li><input type="radio" name="situation" value="sql-injection"> SQL Injection</li>
+                <li><input type="radio" name="situation" value="malware"> Malware Infections</li>
+                <li><input type="radio" name="situation" value="social-engineering"> Social Engineering</li>
+                <li><input type="radio" name="situation" value="zero-day"> Zero-Day Exploits</li>
+                <li><input type="radio" name="situation" value="data-breach"> Data Breaches</li>
+            </ul>
+            <h3>I am a...</h3>
+            <ul>
+                <li><input type="radio" name="role" value="executive"> Executive</li>
+                <li><input type="radio" name="role" value="manager"> Manager</li>
+                <li><input type="radio" name="role" value="employee"> Employee</li>
+            </ul>
+            <h3>Topical search</h3>
+            <ul>
+                <li><input type="radio" name="topic" value="cybersecurity"> Cybersecurity</li>
+                <li><input type="radio" name="topic" value="threat-landscape"> Threat Landscape</li>
+                <li><input type="radio" name="topic" value="role"> Your Role</li>
+                <li><input type="radio" name="topic" value="policies"> Policies</li>
+            </ul>
+        </div>
+
+        <div class="center-pane">
+            <h1>Cybersecurity Handbook</h1>
+            <h2 id="importance">Importance of Cybersecurity Awareness</h2>
+            <p>Cybersecurity is one of the most significant challenges facing organizations today. As state employees, we have a special responsibility to protect the sensitive data of our citizens and to ensure the continuous operation of critical state infrastructure and services. The Local Government Cybersecurity Act (F.S. 282.3185) mandates compliance with cybersecurity standards and reporting requirements highlighting the importance of our role in maintaining cybersecurity.</p>
+            <p>Cyber-attacks can have severe consequences including:</p>
+            <ul>
+                <li>Data breaches that expose sensitive citizen information</li>
+                <li>Disruption of essential state services</li>
+                <li>Financial losses from theft or ransom payments</li>
+                <li>Damage to the state's reputation and public trust.</li>
+            </ul>
+            <p>By raising awareness about cybersecurity threats and best practices, we can create a culture of cybersecurity throughout the state workforce. An informed and vigilant workforce is our best defense against cyber threats.</p>
+            <h2>Objectives of the Handbook</h2>
+            <ul>
+                <li>Provide a clear, accessible introduction to cybersecurity concepts and terminology.</li>
+                <li>Raise awareness about common cyber threats and how to recognize them.</li>
+                <li>Clarify every employee's role and responsibility in maintaining cybersecurity.</li>
+                <li>Offer practical guidance for preventing, detecting, and reporting cyber incidents.</li>
+                <li>Serve as a quick reference guide during a suspected cyber-attack.</li>
+            </ul>
+            <p>By the end of this handbook, you will have a solid foundation in cybersecurity fundamentals and will know what steps to take to protect yourself and our state from cyber threats.</p>
+
+            <h2 id="cybersecurity">Understanding Cybersecurity</h2>
+            <h3>What is Cybersecurity?</h3>
+            <p>Cybersecurity refers to the practice of protecting systems, networks, and programs from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes. Effective cybersecurity reduces the risk of cyber-attacks and protects organizations and individuals from the unauthorized exploitation of systems, networks, and technologies.</p>
+            <p>The Local Government Cybersecurity Act (F.S. 282.3185) provides a legal framework for local governments to follow, ensuring that all cybersecurity measures meet minimum standards and best practices such as those outlined by the National Institute of Standards and Technology (NIST) Cybersecurity Framework.</p>
+            <h3>Why is Cybersecurity Important?</h3>
+            <p>In today's connected world, everyone benefits from advanced cyber defense programs. At an individual level, a cybersecurity attack can result in everything from identity theft to extortion attempts. Everyone relies on critical infrastructure like power plants, hospitals, and financial service companies. Securing these and other organizations is essential to keeping our society functioning.</p>
+            <p>For businesses and government organizations, cybersecurity threats can lead to:</p>
+            <ul>
+                <li>Theft of intellectual property, business plans, and sensitive employee/citizen data</li>
+                <li>Disruption to operations or destruction of data</li>
+                <li>Financial losses and costs associated with remediation and reputational damage</li>
+                <li>Legal liabilities and regulatory fines</li>
+            </ul>
+            <p>Cybersecurity is important because government, military, corporate, financial, and medical organizations collect, process, and store unprecedented amounts of data on computers and other devices. A significant portion of that data can be sensitive information, whether that be intellectual property, financial data, personal information, or other types of data for which unauthorized access or exposure could have negative consequences.</p>
+            <h3>Basic Terminologies Explained</h3>
+            <p><strong>Malware:</strong> Software designed to cause damage to a computer, server, client, or network. This includes viruses, worms, Trojan horses, ransomware, and spyware.</p>
+            <p><strong>Phishing:</strong> A type of social engineering where an attacker sends fraudulent messages to trick the victim into revealing sensitive information or deploying malicious software on their infrastructure.</p>
+            <p><strong>Ransomware:</strong> Malware that encrypts a victim's files and the attacker demands a ransom from the victim to restore access to the data.</p>
+            <p><strong>Social Engineering:</strong> Psychological manipulation of people into performing actions or divulging confidential information. It's a type of confidence trick for the purpose of information gathering, fraud, or system access.</p>
+            <p><strong>Firewall:</strong> A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.</p>
+            <p><strong>Encryption:</strong> The process of encoding information in such a way that only authorized parties can access it and those who are not authorized cannot.</p>
+            <p><strong>VPN (Virtual Private Network):</strong> A service that lets you access the internet privately and securely by routing your connection through a server and hiding your online actions.</p>
+
+            <h2 id="executive">Executive</h2>
+            <p>As an executive, your role in cybersecurity involves setting the tone from the top, ensuring that cybersecurity is a priority within the organization. Your responsibilities include:</p>
+            <ul>
+                <li>Championing cybersecurity initiatives.</li>
+                <li>Allocating resources for cybersecurity measures.</li>
+                <li>Ensuring compliance with relevant laws and regulations.</li>
+                <li>Communicating the importance of cybersecurity to all employees.</li>
+            </ul>
+            <h2 id="manager">Manager</h2>
+            <p>As a manager, you play a critical role in implementing cybersecurity policies and procedures. Your responsibilities include:</p>
+            <ul>
+                <li>Ensuring your team follows cybersecurity best practices.</li>
+                <li>Providing cybersecurity training to your team members.</li>
+                <li>Monitoring for and reporting any suspicious activities.</li>
+                <li>Collaborating with IT and cybersecurity teams to address vulnerabilities.</li>
+            </ul>
+            <h2 id="employee">Employee</h2>
+            <p>As an employee, you are the first line of defense against cyber threats. Your responsibilities include:</p>
+            <ul>
+                <li>Being aware of and following the organization's cybersecurity policies.</li>
+                <li>Participating in cybersecurity training and awareness programs.</li>
+                <li>Reporting any suspicious activities or potential threats.</li>
+                <li>Practicing good cybersecurity hygiene, such as using strong passwords and being cautious with emails and attachments.</li>
+            </ul>
+            <h2 id="phishing">Phishing Attack</h2>
+            <p>Phishing attacks involve fraudulent emails or messages designed to trick you into providing sensitive information. Here's what to do:</p>
+            <ul>
+                <li>Do not click on links or download attachments from unknown or suspicious sources.</li>
+                <li>Verify the sender's email address and look for signs of phishing (e.g., misspellings, urgent language).</li>
+                <li>Report the phishing attempt to your IT department immediately.</li>
+            </ul>
+            <h2 id="ransomware">Ransomware Attack</h2>
+            <p>Ransomware is a type of malware that encrypts your files and demands a ransom for their release. Here's what to do:</p>
+            <ul>
+                <li>Do not pay the ransom. There is no guarantee that you will get your files back.</li>
+                <li>Disconnect your computer from the network to prevent the spread of ransomware.</li>
+                <li>Report the ransomware attack to your IT department immediately.</li>
+                <li>Follow your organization's incident response plan for ransomware attacks.</li>
+            </ul>
+            <h2 id="apts">Advanced Persistent Threats (APTs)</h2>
+            <p>APTs are prolonged and targeted cyber-attacks aimed at stealing sensitive information. Here's what to do:</p>
+            <ul>
+                <li>Be vigilant for unusual network activity and report it immediately.</li>
+                <li>Ensure your systems are up to date with the latest security patches.</li>
+                <li>Follow your organization's incident response plan for dealing with APTs.</li>
+            </ul>
+            <h2 id="dos">DoS/DDoS Attack</h2>
+            <p>Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks aim to disrupt normal traffic to a web service. Here's what to do:</p>
+            <ul>
+                <li>Report the attack to your IT department immediately.</li>
+                <li>Follow your organization's incident response plan for DoS/DDoS attacks.</li>
+                <li>Ensure that critical services have adequate protections in place, such as load balancing and redundancy.</li>
+            </ul>
+            <h2 id="insider">Insider Threat</h2>
+            <p>Insider threats involve malicious activities by individuals within the organization. Here's what to do:</p>
+            <ul>
+                <li>Monitor for unusual behavior or access patterns among employees.</li>
+                <li>Report any suspicious activities to your IT department immediately.</li>
+                <li>Ensure that access to sensitive information is restricted based on the principle of least privilege.</li>
+            </ul>
+            <h2 id="sql-injection">SQL Injection</h2>
+            <p>SQL injection attacks target web applications by injecting malicious SQL code. Here's what to do:</p>
+            <ul>
+                <li>Report any unusual or suspicious activities to your IT department immediately.</li>
+                <li>Ensure that web applications are secure and up to date with the latest security patches.</li>
+                <li>Follow your organization's incident response plan for dealing with SQL injection attacks.</li>
+            </ul>
+            <h2 id="malware">Malware Infections</h2>
+            <p>Malware infections can cause significant damage to your systems and data. Here's what to do:</p>
+            <ul>
+                <li>Disconnect your computer from the network to prevent the spread of malware.</li>
+                <li>Report the malware infection to your IT department immediately.</li>
+                <li>Follow your organization's incident response plan for dealing with malware infections.</li>
+            </ul>
+            <h2 id="social-engineering">Social Engineering</h2>
+            <p>Social engineering attacks involve manipulating individuals into divulging confidential information. Here's what to do:</p>
+            <ul>
+                <li>Be cautious of unsolicited requests for sensitive information.</li>
+                <li>Verify the identity of individuals requesting information before responding.</li>
+                <li>Report any social engineering attempts to your IT department immediately.</li>
+            </ul>
+            <h2 id="zero-day">Zero-Day Exploits</h2>
+            <p>Zero-day exploits target vulnerabilities that are unknown to the software vendor. Here's what to do:</p>
+            <ul>
+                <li>Ensure that your systems and software are up to date with the latest security patches.</li>
+                <li>Report any unusual or suspicious activities to your IT department immediately.</li>
+                <li>Follow your organization's incident response plan for dealing with zero-day exploits.</li>
+            </ul>
+            <h2 id="data-breach">Data Breaches</h2>
+            <p>Data breaches involve the unauthorized access and disclosure of sensitive information. Here's what to do:</p>
+            <ul>
+                <li>Report the data breach to your IT department immediately.</li>
+                <li>Follow your organization's procedures for responding to data breaches.</li>
+                <li>Monitor your accounts and personal information for signs of misuse.</li>
+            </ul>
+            <a href="#" class="back-home">Back to Home</a>
+        </div>
+
+        <div class="right-pane">
+            <div class="right-pane-top">
+                <h2>Action Area</h2>
+                <p>What to Do: Follow the instructions based on your selections.</p>
+            </div>
+            <div class="right-pane-bottom">
+                <h2>Recommendations and Further Readings</h2>
+                <ul>
+                    <li><a href="#">NIST Cybersecurity Framework</a></li>
+                    <li><a href="#">Local Government Cybersecurity Act (F.S. 282.3185)</a></li>
+                    <li><a href="#">Cybersecurity Best Practices</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const loginMessage = document.getElementById('loginMessage');
+        const container = document.querySelector('.container');
+
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === 'password') {
+                loginMessage.textContent = '';
+                loginForm.style.display = 'none';
+                container.style.display = 'flex';
+            } else {
+                loginMessage.textContent = 'Invalid username or password. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>
