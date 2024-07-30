@@ -26,7 +26,7 @@ services:
       MYSQL_USER: myuser
       MYSQL_PASSWORD: mypassword
     ports:
-      - "3306:3306"
+      - "3307:3307"
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
