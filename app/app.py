@@ -22,6 +22,11 @@ except mysql.connector.Error as err:
 def home():
     return render_template('index.html', message=connection_status)
 
+@app.route('/content')
+def content():
+    return render_template('content.html')
+
+
 @app.route('/login', methods=['POST'])
 def login():
     username = request.form['username']
@@ -31,7 +36,8 @@ def login():
     if validate_user(username, password):
         return render_template('content.html')  # Assuming you have a content.html to show on successful login
     else:
-        return render_template('index.html', message="Unauthorized user")
+        return redirect(url_for('home'))
+        #return render_template('index.html', message="Unauthorized user")
 
 def validate_user(username, password):
     query = "SELECT password FROM users WHERE username = %s"
@@ -49,4 +55,4 @@ def validate_user(username, password):
     return False
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
