@@ -111,3 +111,11 @@ a:hover {
 .active {
     display: block;
 }
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
