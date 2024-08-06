@@ -12,6 +12,14 @@ function showAttackContent(attack) {
     resetRoleContents();
 }
 
+function showContent(id) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+
+
 function showRoleContent(role) {
     if (selectedAttack) {
         const content = getRoleContent(role, selectedAttack);
