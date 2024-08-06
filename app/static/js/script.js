@@ -102,6 +102,8 @@ function showContentOnBtn()
         {
             document.getElementById('action').style.display = 'block';
                 document.getElementById('home').style.display = 'none';
+                document.getElementById('fl-statutes').style.display = 'none';
+                
                 document.getElementById('content-main').style.display = 'block';
                 document.getElementById('content-main').innerHTML = `
  <h2>Phishing Attack Response</h2>
@@ -181,6 +183,7 @@ document.getElementById('action').innerHTML = `
                 document.getElementById('action').style.display = 'block';
                 document.getElementById('home').style.display = 'none';
                 document.getElementById('content-main').style.display = 'block';
+                document.getElementById('fl-statutes').style.display = 'none';
                 document.getElementById('content-main').innerHTML = `
  <h1>Phishing</h1>
 
@@ -237,6 +240,7 @@ document.getElementById('action').innerHTML = `
             document.getElementById('action').style.display = 'block';
                 document.getElementById('home').style.display = 'none';
                 document.getElementById('content-main').style.display = 'block';
+                document.getElementById('fl-statutes').style.display = 'none';
                 document.getElementById('content-main').innerHTML = `
  <h1>Ransomware</h1>
 <p>Someone in your company gets an email. It looks legitimate — but with one click on a link, or one download of an attachment, everyone is locked out of your network. That link downloaded software that holds your data hostage. That’s a ransomware attack.</p>
@@ -298,6 +302,7 @@ document.getElementById('action').innerHTML = `
                 document.getElementById('action').style.display = 'block';
                     document.getElementById('home').style.display = 'none';
                     document.getElementById('content-main').style.display = 'block';
+                    document.getElementById('fl-statutes').style.display = 'none';
                     document.getElementById('content-main').innerHTML = `
      <h1>Ransomware Attack Response</h1>
 <p>In the event of a ransomware attack, the response steps should be clearly defined for each role to ensure a swift and effective reaction. Below are the specific steps that people in the roles of the managers should take after a ransomware attack has occurred:</p>
@@ -370,6 +375,7 @@ document.getElementById('action').innerHTML = `
         {
             document.getElementById('home').style.display = 'block';
             document.getElementById('content-main').style.display = 'none';
+            document.getElementById('fl-statutes').style.display = 'none';
             document.getElementById('action').innerHTML = `
      <h3>Subscribe</h3>
                 <p>Subscribe to our Newsletter:</p>
@@ -415,6 +421,7 @@ function topicalSearch(topic)
 {
             document.getElementById('home').style.display = 'none';
             document.getElementById('action').style.display = 'none';
+            document.getElementById('fl-statutes').style.display = 'none';
             document.getElementById('content-main').style.display = 'block';
             if(topic == 'mds')
             {
@@ -451,3 +458,56 @@ document.getElementById('ref').innerHTML = `
 }
             }
         
+function showfl(){
+    
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('action').style.display = 'none';
+    document.getElementById('fl-statutes').style.display = 'block';
+    document.getElementById('content-main').style.display = 'none';
+}
+
+function showhome(){
+   
+    
+    document.getElementById('home').style.display = 'block';
+            document.getElementById('content-main').style.display = 'none';
+            document.getElementById('fl-statutes').style.display = 'none';
+            document.getElementById('action').innerHTML = `
+     <h3>Subscribe</h3>
+                <p>Subscribe to our Newsletter:</p>
+                <p><input type="text" placeholder="Your Email.." style="
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input box */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Maximum width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+"/></p>
+<button onclick="showContentOnBtn()" style="
+background-color: #00703c; /* Button background color */
+color: white; /* Text color */
+border: none; /* Remove default border */
+border-radius: 10px; /* Rounded corners */
+
+font-size: 16px; /* Font size */
+padding: 5px 15px; /* Padding inside the button */
+cursor: pointer; /* Cursor style when hovering */
+transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and transform transitions */
+">
+
+Subscribe
+</button>
+    `;
+    document.getElementById('ref').innerHTML = `
+    <li><a href="#">NIST Cybersecurity Framework</a></li>
+                    <li><a href="#">Local Government Cybersecurity Act (F.S. 282.3185)</a></li>
+                    <li><a href="#">Cybersecurity Best Practices</a></li>
+        
+    `;
+    
+}
