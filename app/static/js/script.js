@@ -371,6 +371,1257 @@ document.getElementById('action').innerHTML = `
                     </ul>
     `;
             }
+
+            else if(r == 'employee' && w == 'data-breach')
+                {
+                    
+                document.getElementById('action').style.display = 'block';
+                document.getElementById('home').style.display = 'none';
+                document.getElementById('content-main').style.display = 'block';
+                document.getElementById('fl-statutes').style.display = 'none';
+                document.getElementById('content-main').innerHTML = `
+ <h2>Employees: Data Breach Response</h2>
+<p>If you suspect you have been involved in a data breach, follow these steps immediately:</p>
+<div class="section">
+<h3>Steps to Take After a Data Breach:</h3>
+<ol>
+<li>
+<strong>Report the Incident:</strong>
+<ul>
+<li>Immediately report the data breach to the IT department and follow their instructions.</li>
+</ul>
+</li>
+<li>
+<strong>Disconnect from Network:</strong>
+<ul>
+<li>Disconnect the compromised device from the network to prevent further spread of the breach.</li>
+</ul>
+</li>
+<li>
+<strong>Change Passwords:</strong>
+<ul>
+<li>Change passwords for all accounts, especially those accessed through the compromised device.</li>
+</ul>
+</li>
+<li>
+<strong>Run Security Scans:</strong>
+<ul>
+<li>Use antivirus and anti-malware software to scan your device for any additional threats.</li>
+</ul>
+</li>
+<li>
+<strong>Follow IT Guidance:</strong>
+<ul>
+<li>Adhere to any additional steps provided by the IT department to secure your account and device.</li>
+</ul>
+</li>
+<li>
+<strong>Document the Incident:</strong>
+<ul>
+<li>Document all details of the incident, including how it was received, any information disclosed, and the initial response actions taken.</li>
+</ul>
+</li>
+<li>
+<strong>Stay Vigilant:</strong>
+<ul>
+<li>Be extra cautious with emails and communications and report any further suspicious activities immediately.</li>
+</ul>
+</li>
+</ol>
+<img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/em_databreach.jpg?raw=true" alt="Data Breach Response" width="" height="500" style="display: block; margin: 0 auto;" />
+</div>
+`;
+                document.getElementById('ref').innerHTML = `
+<li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+<li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+<li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>
+    
+`;
+document.getElementById('action').innerHTML = `
+ <h3>Action Area</h3>
+               
+                <ul>
+                    <li>Contain the Breach</li>
+                    <li>Report and Communicate</li>
+                     <li>Facilitate Forensic Analysis</li>
+                      <li>Reinforce Security Measures</li>
+                </ul>
+`;
+                }
+
+                else if(r == 'executive' && w == 'data-breach')
+                    {
+                        
+                    document.getElementById('action').style.display = 'block';
+                    document.getElementById('home').style.display = 'none';
+                    document.getElementById('content-main').style.display = 'block';
+                    document.getElementById('fl-statutes').style.display = 'none';
+                    document.getElementById('content-main').innerHTML = `
+     <h2>Executive Team: Data Breach Response</h2>
+<p>In the event of a data breach, the response steps should be clearly defined for each role to ensure a swift and effective reaction.</p>
+<div class="section">
+<h3>Steps to Take After a Data Breach:</h3>
+<ol>
+<li>
+<strong>Assess the Impact:</strong>
+<ul>
+<li>Evaluate the scope of the breach, including what data was compromised and how it affects the organization.</li>
+</ul>
+</li>
+<li>
+<strong>Activate Incident Response Plan:</strong>
+<ul>
+<li>Ensure the incident response team is fully engaged and leading the mitigation efforts.</li>
+</ul>
+</li>
+<li>
+<strong>Coordinate with Legal and Regulatory Authorities:</strong>
+<ul>
+<li>Report the breach to relevant authorities as required by applicable laws and regulations.</li>
+<li>Engage legal counsel to manage potential liabilities and compliance issues.</li>
+</ul>
+</li>
+<li>
+<strong>Internal Communication:</strong>
+<ul>
+<li>Inform key stakeholders, including board members and department heads, about the breach and the steps being taken.</li>
+</ul>
+</li>
+<li>
+<strong>External Communication:</strong>
+<ul>
+<li>Prepare a public statement if necessary to address the breach, ensuring transparency and maintaining public trust.</li>
+</ul>
+</li>
+<li>
+<strong>Review and Improve Security Measures:</strong>
+<ul>
+<li>Conduct a post-incident analysis to identify weaknesses and implement stronger security measures to prevent future breaches.</li>
+</ul>
+</li>
+<li>
+<strong>Support for Affected Parties:</strong>
+<ul>
+<li>Provide support and guidance to employees and customers affected by the breach, including credit monitoring if personal information was compromised.</li>
+</ul>
+</li>
+</ol>
+<img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/ex_databreach.jpg?raw=true" alt="Data Breach Response" width="" height="500" style="display: block; margin: 0 auto;" />
+</div>
+    `;
+                    document.getElementById('ref').innerHTML = `
+    <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+    <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+    <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>
+        
+    `;
+    document.getElementById('action').innerHTML = `
+     <h3>Action Area</h3>
+                   
+                    <ul>
+                        <li>Contain the Breach</li>
+                        <li>Report and Communicate</li>
+                         <li>Facilitate Forensic Analysis</li>
+                          <li>Reinforce Security Measures</li>
+                    </ul>
+    `;
+                    }
+
+                    else if(r == 'manager' && w == 'data-breach')
+                        {
+                            
+                        document.getElementById('action').style.display = 'block';
+                        document.getElementById('home').style.display = 'none';
+                        document.getElementById('content-main').style.display = 'block';
+                        document.getElementById('fl-statutes').style.display = 'none';
+                        document.getElementById('content-main').innerHTML = `
+         <h2>People Managers: Data Breach Response</h2>
+<p>In the event of a data breach, people managers should take the following steps to manage the situation effectively:</p>
+<div class="section">
+<h3>Steps to Take After a Data Breach:</h3>
+<ol>
+<li>
+<strong>Report to IT and Upper Management:</strong>
+<ul>
+<li>Immediately inform the IT department and your direct superior about the incident.</li>
+</ul>
+</li>
+<li>
+<strong>Contain the Breach:</strong>
+<ul>
+<li>Work with the IT department to isolate affected systems and prevent further damage.</li>
+</ul>
+</li>
+<li>
+<strong>Identify and Assist Affected Team Members:</strong>
+<ul>
+<li>Determine which team members were affected and provide them with specific instructions to secure their systems.</li>
+</ul>
+</li>
+<li>
+<strong>Communicate with Your Team:</strong>
+<ul>
+<li>Clearly communicate the situation to your team and provide guidance on next steps.</li>
+</ul>
+</li>
+<li>
+<strong>Facilitate Forensic Analysis:</strong>
+<ul>
+<li>Assist the IT and security teams with collecting information and evidence for forensic analysis.</li>
+</ul>
+</li>
+<li>
+<strong>Reinforce Security Protocols:</strong>
+<ul>
+<li>Conduct an immediate refresher training session to reinforce cybersecurity best practices and prevent future incidents.</li>
+</ul>
+</li>
+<li>
+<strong>Monitor for Further Threats:</strong>
+<ul>
+<li>Keep an eye on team activities and communications for signs of additional breaches or suspicious behavior.</li>
+</ul>
+</li>
+</ol>
+<img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/pm_databreach.jpg?raw=true" alt="Data Breach Response" width="" height="500" style="display: block; margin: 0 auto;" />
+</div>
+        `;
+                        document.getElementById('ref').innerHTML = `
+        <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+        <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+        <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>
+            
+        `;
+        document.getElementById('action').innerHTML = `
+         <h3>Action Area</h3>
+                       
+                        <ul>
+                            <li>Contain the Breach</li>
+                            <li>Report and Communicate</li>
+                             <li>Facilitate Forensic Analysis</li>
+                              <li>Reinforce Security Measures</li>
+                        </ul>
+        `;
+                        }
+
+                        else if(r == 'blank' && w == 'data-breach')
+                            {
+                                
+                            document.getElementById('action').style.display = 'block';
+                            document.getElementById('home').style.display = 'none';
+                            document.getElementById('content-main').style.display = 'block';
+                            document.getElementById('fl-statutes').style.display = 'none';
+                            document.getElementById('content-main').innerHTML = `
+             
+<h1>Data Breaches</h1>
+
+<h2>How Data Breaches Happen</h2>
+<p>Data breaches occur when sensitive, protected, or confidential data is accessed, used, or disclosed without authorization. Breaches can result from malicious attacks, such as hacking, or can be due to human error, such as sending an email with sensitive information to the wrong recipient. Attackers often target businesses with weak security measures or exploit vulnerabilities in software or systems.</p>
+<img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/databreach.png?raw=true" alt="Data Breach Illustration" width="" height="300" style="display: block; margin: 0 auto;" />
+
+<h2>What You Can Do</h2>
+<p>To protect yourself and your organization from data breaches, follow these best practices:</p>
+<ul>
+<li><strong>Use strong passwords:</strong> Ensure that all accounts use strong, unique passwords, and change them regularly. Consider using a password manager to store and generate complex passwords.</li>
+<li><strong>Enable multi-factor authentication (MFA):</strong> Add an extra layer of security to your accounts by enabling MFA. This makes it harder for attackers to gain access even if they obtain your password.</li>
+<li><strong>Be cautious with data sharing:</strong> Limit the sharing of sensitive information and ensure that data is only shared through secure channels. Always verify the recipient’s identity before sending sensitive information.</li>
+</ul>
+
+<h2>How to Protect Your Business</h2>
+<p>Implement these strategies to safeguard your business from data breaches:</p>
+<ul>
+<li><strong>Encrypt sensitive data:</strong> Protect sensitive information by encrypting it both at rest and in transit. Encryption ensures that even if data is intercepted, it cannot be read without the decryption key.</li>
+<li><strong>Regularly update and patch systems:</strong> Keep your software, operating systems, and security tools up to date to protect against vulnerabilities that could be exploited by attackers.</li>
+<li><strong>Conduct regular security audits:</strong> Regularly review and assess your security measures to identify and address potential weaknesses. Consider hiring third-party experts for thorough penetration testing.</li>
+<li><strong>Implement data access controls:</strong> Restrict access to sensitive data to only those employees who need it to perform their job duties. Use role-based access controls and regularly review permissions.</li>
+</ul>
+
+<h2>What if You Experience a Data Breach</h2>
+<p>If your organization experiences a data breach, take the following steps:</p>
+<ul>
+<li><strong>Contain the breach:</strong> Immediately take steps to contain the breach by disconnecting affected systems from the network and securing any compromised accounts.</li>
+<li><strong>Assess the damage:</strong> Determine the scope of the breach by identifying the data that was accessed or stolen and assessing the impact on your organization and affected individuals.</li>
+<li><strong>Notify affected parties:</strong> If personal or sensitive data has been compromised, notify the affected individuals and provide them with information on how to protect themselves from identity theft or fraud.</li>
+<li><strong>Report the breach:</strong> Depending on the jurisdiction and the nature of the breach, you may be required to report the incident to regulatory authorities. Be sure to follow all legal requirements for breach notification.</li>
+<li><strong>Review and improve security measures:</strong> After the breach has been contained, review your security practices and take steps to prevent future breaches. This may include updating security policies, improving employee training, and investing in stronger security technologies.</li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NeUmClyrwBs" title="Data Breach Awareness Video" frameborder="0" allowfullscreen></iframe>
+
+<br>
+<p style="color:red;">* To learn more about protecting yourself from data breaches based on your specific role, please select your role from the left pane.</p>
+
+            `;
+                            document.getElementById('ref').innerHTML = `
+            <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+            <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+            <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>
+                
+            `;
+            document.getElementById('action').innerHTML = `
+             <h3>Action Area</h3>
+                           
+                            <ul>
+                                <li>Contain the Breach</li>
+                                <li>Report and Communicate</li>
+                                 <li>Facilitate Forensic Analysis</li>
+                                  <li>Reinforce Security Measures</li>
+                            </ul>
+            `;
+                            }
+
+                            else if(r == 'employee' && w == 'malware')
+                                {
+                                    
+                                document.getElementById('action').style.display = 'block';
+                                document.getElementById('home').style.display = 'none';
+                                document.getElementById('content-main').style.display = 'block';
+                                document.getElementById('fl-statutes').style.display = 'none';
+                                document.getElementById('content-main').innerHTML = `
+                 
+    <h2>Employees: Malware Infection Response</h2>
+<p>If you suspect you have been targeted by a malware infection, follow these steps immediately:</p>
+<div class="section">
+<h3>Steps to Take After a Malware Infection:</h3>
+<ol>
+<li>
+<strong>Report the Incident:</strong>
+<ul>
+<li>Immediately report the malware infection to the IT department and follow their instructions.</li>
+</ul>
+</li>
+<li>
+<strong>Disconnect from Network:</strong>
+<ul>
+<li>Disconnect the compromised device from the network to prevent further spread of the malware.</li>
+</ul>
+</li>
+<li>
+<strong>Change Passwords:</strong>
+<ul>
+<li>Change passwords for all accounts, especially those accessed through the compromised device.</li>
+</ul>
+</li>
+<li>
+<strong>Run Security Scans:</strong>
+<ul>
+<li>Use antivirus and anti-malware software to scan your device for any additional threats.</li>
+</ul>
+</li>
+<li>
+<strong>Follow IT Guidance:</strong>
+<ul>
+<li>Adhere to any additional steps provided by the IT department to secure your account and device.</li>
+</ul>
+</li>
+<li>
+<strong>Document the Incident:</strong>
+<ul>
+<li>Document all details of the incident, including how it was received, any information disclosed, and the initial response actions taken.</li>
+</ul>
+</li>
+<li>
+<strong>Stay Vigilant:</strong>
+<ul>
+<li>Be extra cautious with emails and communications and report any further suspicious activities immediately.</li>
+</ul>
+</li>
+</ol>
+<img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/em_malware.jpg?raw=true" alt="Malware Infection Response" width="" height="500" style="display: block; margin: 0 auto;" />
+</div>
+    
+                `;
+                                document.getElementById('ref').innerHTML = `
+                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>
+                    
+                `;
+                document.getElementById('action').innerHTML = `
+                 <h3>Action Area</h3>
+                               
+                                <ul>
+                                    <li>Contain the Breach</li>
+                                    <li>Report and Communicate</li>
+                                     <li>Facilitate Forensic Analysis</li>
+                                      <li>Reinforce Security Measures</li>
+                                </ul>
+                `;
+                                }
+
+                                else if(r == 'executive' && w == 'malware')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h2>Executive Team: Malware Infection Response</h2>
+                                    <p>In the event of a malware infection, the response steps should be clearly defined for each role to ensure a swift and effective reaction.</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Malware Infection:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Assess the Impact:</strong>
+                                    <ul>
+                                    <li>Evaluate the extent of the infection and what systems or data were affected.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Activate Incident Response Plan:</strong>
+                                    <ul>
+                                    <li>Ensure the incident response team is fully engaged and leading the mitigation efforts.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Engage IT and Security Teams:</strong>
+                                    <ul>
+                                    <li>Work with IT and security teams to identify and remove the malware.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Internal Communication:</strong>
+                                    <ul>
+                                    <li>Inform key stakeholders, including board members and department heads, about the infection and the steps being taken.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>External Communication:</strong>
+                                    <ul>
+                                    <li>Prepare a public statement if necessary to address the infection, ensuring transparency and maintaining public trust.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Review and Improve Security Measures:</strong>
+                                    <ul>
+                                    <li>Conduct a post-incident analysis to identify weaknesses and implement stronger security measures to prevent future infections.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Support for Affected Parties:</strong>
+                                    <ul>
+                                    <li>Provide support and guidance to employees affected by the infection.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/ex_malware.jpg?raw=true" alt="Malware Infection Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    
+                                    
+                                    else if(r == 'manager' && w == 'malware')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            
+                                    <h2>People Managers: Malware Infection Response</h2>
+                                    <p>In the event of a malware infection, people managers should take the following steps to manage the situation effectively:</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Malware Infection:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Report to IT and Upper Management:</strong>
+                                    <ul>
+                                    <li>Immediately inform the IT department and your direct superior about the incident.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Contain the Infection:</strong>
+                                    <ul>
+                                    <li>Work with the IT department to isolate affected systems and prevent further spread.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Identify and Assist Affected Team Members:</strong>
+                                    <ul>
+                                    <li>Determine which team members were affected and provide them with specific instructions to secure their systems.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Communicate with Your Team:</strong>
+                                    <ul>
+                                    <li>Clearly communicate the situation to your team and provide guidance on next steps.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Facilitate Forensic Analysis:</strong>
+                                    <ul>
+                                    <li>Assist the IT and security teams with collecting information and evidence for forensic analysis.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Reinforce Security Protocols:</strong>
+                                    <ul>
+                                    <li>Conduct an immediate refresher training session to reinforce cybersecurity best practices and prevent future incidents.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Monitor for Further Threats:</strong>
+                                    <ul>
+                                    <li>Keep an eye on team activities and communications for signs of additional threats or suspicious behavior.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/pm_malware.jpg?raw=true" alt="Malware Infection Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                    
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    
+                                    else if(r == 'blank' && w == 'malware')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h1>Malware Infection</h1>
+                                    
+                                    <h2>How Malware Infections Happen</h2>
+                                    <p>Malware, short for malicious software, is designed to disrupt, damage, or gain unauthorized access to computer systems. Malware can infect systems through various means, including phishing emails, malicious websites, infected USB drives, and vulnerabilities in software. Once installed, malware can steal sensitive data, encrypt files for ransom, or allow attackers to control the system remotely.</p>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/malware.jpg?raw=true" alt="Malware Infection Illustration" width="" height="300" style="display: block; margin: 0 auto;" />
+                                    
+                                    <h2>What You Can Do</h2>
+                                    <p>To protect yourself and your organization from malware infections, consider these best practices:</p>
+                                    <ul>
+                                    <li><strong>Do not open suspicious emails:</strong> Avoid clicking on links or downloading attachments from unknown or untrusted sources. Phishing emails are a common method for spreading malware.</li>
+                                    <li><strong>Install antivirus software:</strong> Use reputable antivirus and anti-malware software to detect and prevent malware infections. Ensure that the software is regularly updated to catch the latest threats.</li>
+                                    <li><strong>Keep your system updated:</strong> Regularly update your operating system and all software applications to patch vulnerabilities that could be exploited by malware.</li>
+                                    </ul>
+                                    
+                                    <h2>How to Protect Your Business</h2>
+                                    <p>Implement these strategies to safeguard your business from malware infections:</p>
+                                    <ul>
+                                    <li><strong>Regular backups:</strong> Perform regular backups of critical data and store them offline. This ensures that you can recover your data in the event of a malware attack, such as ransomware.</li>
+                                    <li><strong>Implement network security:</strong> Use firewalls, intrusion detection systems, and secure gateways to protect your network from unauthorized access and malware infiltration.</li>
+                                    <li><strong>Employee training:</strong> Train your employees to recognize phishing attempts and other common tactics used to deliver malware. Regular awareness training is key to reducing the risk of infection.</li>
+                                    <li><strong>Restrict administrative privileges:</strong> Limit administrative access to critical systems and data to reduce the potential impact of a malware infection. Ensure that users only have the permissions they need to perform their job duties.</li>
+                                    </ul>
+                                    
+                                    <h2>What if You Experience a Malware Infection</h2>
+                                    <p>If you suspect that your system has been infected with malware, take the following steps:</p>
+                                    <ul>
+                                    <li><strong>Disconnect from the network:</strong> Immediately disconnect the infected device from the network to prevent the malware from spreading to other systems.</li>
+                                    <li><strong>Run a full system scan:</strong> Use your antivirus or anti-malware software to perform a full system scan and remove any detected threats. If the infection persists, consider seeking professional assistance.</li>
+                                    <li><strong>Restore from backups:</strong> If the malware has compromised or encrypted your data, restore it from the most recent clean backup.</li>
+                                    <li><strong>Notify your IT department:</strong> Report the infection to your IT department or security team so they can take additional steps to secure your network and prevent further infections.</li>
+                                    <li><strong>Review and update security measures:</strong> After the incident, review your security practices and consider implementing additional safeguards to prevent future infections.</li>
+                                    </ul>
+                                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NMYbkzjI5EY" title="Malware Awareness Video" frameborder="0" allowfullscreen></iframe>
+                                    
+                                    <br>
+                                    <p style="color:red;">* To learn more about protecting yourself from malware infections based on your specific role, please select your role from the left pane.</p>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'employee' && w == 'phishing')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            
+                                    <h2>Employees: Phishing Attack Response</h2>
+                                    <p>If you suspect you have been targeted by a phishing attack, follow these steps immediately:</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Phishing Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Report the Incident:</strong>
+                                    <ul>
+                                    <li>Immediately report the phishing attack to the IT department and follow their instructions.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Disconnect from Network:</strong>
+                                    <ul>
+                                    <li>Disconnect the compromised device from the network to prevent further spread of malware or unauthorized access.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Change Passwords:</strong>
+                                    <ul>
+                                    <li>Change passwords for all accounts, especially those accessed through the compromised device or email.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Run Security Scans:</strong>
+                                    <ul>
+                                    <li>Use antivirus and anti-malware software to scan your device for any additional threats.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Follow IT Guidance:</strong>
+                                    <ul>
+                                    <li>Adhere to any additional steps provided by the IT department to secure your account and device.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Document the Incident:</strong>
+                                    <ul>
+                                    <li>Document all details of the phishing attack, including how it was received, any information disclosed, and the initial response actions taken.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Stay Vigilant:</strong>
+                                    <ul>
+                                    <li>Be extra cautious with emails and communications and report any further suspicious activities immediately.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/em_phishing.jpg?raw=true" alt="Phishing Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                    
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'manager' && w == 'phishing')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h2>People Managers: Phishing Attack Response</h2>
+                                    <p>In the event of a successful phishing attack, people managers should take the following steps to manage the situation effectively:</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Phishing Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Report to IT and Upper Management:</strong>
+                                    <ul>
+                                    <li>Immediately inform the IT department and your direct superior about the incident.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Contain the Breach:</strong>
+                                    <ul>
+                                    <li>Work with the IT department to isolate compromised systems to prevent further damage.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Identify and Assist Affected Team Members:</strong>
+                                    <ul>
+                                    <li>Determine which team members were affected and provide them with specific instructions to secure their accounts.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Communicate with Your Team:</strong>
+                                    <ul>
+                                    <li>Clearly communicate the situation to your team and provide guidance on next steps.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Facilitate Forensic Analysis:</strong>
+                                    <ul>
+                                    <li>Assist the IT and security teams with collecting information and evidence for forensic analysis.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Reinforce Security Protocols:</strong>
+                                    <ul>
+                                    <li>Conduct an immediate refresher training session to reinforce cybersecurity best practices and prevent future incidents.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Monitor for Further Threats:</strong>
+                                    <ul>
+                                    <li>Keep an eye on team activities and communications for signs of additional phishing attempts or other suspicious behavior.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/pm_phishing.jpg?raw=true" alt="Phishing Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'employee' && w == 'ransomware')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            
+                                    <h2>Employees: Ransomware Attack Response</h2>
+                                    <p>If you suspect you have been targeted by a ransomware attack, follow these steps immediately:</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Ransomware Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Report the Incident:</strong>
+                                    <ul>
+                                    <li>Immediately report the ransomware attack to the IT department and follow their instructions.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Disconnect from Network:</strong>
+                                    <ul>
+                                    <li>Disconnect the compromised device from the network to prevent further spread of malware or unauthorized access.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Change Passwords:</strong>
+                                    <ul>
+                                    <li>Change passwords for all accounts, especially those accessed through the compromised device or email.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Run Security Scans:</strong>
+                                    <ul>
+                                    <li>Use antivirus and anti-malware software to scan your device for any additional threats.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Follow IT Guidance:</strong>
+                                    <ul>
+                                    <li>Adhere to any additional steps provided by the IT department to secure your account and device.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Document the Incident:</strong>
+                                    <ul>
+                                    <li>Document all details of the ransomware attack, including how it was received, any information disclosed, and the initial response actions taken.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Stay Vigilant:</strong>
+                                    <ul>
+                                    <li>Be extra cautious with emails and communications and report any further suspicious activities immediately.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/em_ransomware.jpg?raw=true" alt="Ransomware Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                    
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'executive' && w == 'ransomware')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h2>Executive Team - Ransomware Attack Response</h2>
+                                    <p>In the event of a successful ransomware attack, the response steps should be clearly defined for each role to ensure a swift and effective reaction.</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Ransomware Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Assess the Impact:</strong>
+                                    <ul>
+                                    <li>Evaluate the extent of the attack and what systems or data have been compromised.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Activate Incident Response Plan:</strong>
+                                    <ul>
+                                    <li>Ensure the incident response team is fully engaged and leading the mitigation efforts.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Coordinate with Legal and Regulatory Authorities:</strong>
+                                    <ul>
+                                    <li>Report the attack to relevant authorities as required by Florida’s Local Government Cybersecurity Act (F.S. 282.3185).</li>
+                                    <li>Engage legal counsel to manage potential liabilities and compliance issues.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Internal Communication:</strong>
+                                    <ul>
+                                    <li>Inform key stakeholders, including board members and department heads, about the attack and the steps being taken.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>External Communication:</strong>
+                                    <ul>
+                                    <li>Prepare a public statement if necessary to address the attack, ensuring transparency and maintaining public trust.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Review and Improve Security Measures:</strong>
+                                    <ul>
+                                    <li>Conduct a post-incident analysis to identify weaknesses and implement stronger security measures to prevent future attacks.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Support for Affected Parties:</strong>
+                                    <ul>
+                                    <li>Provide support and guidance to employees affected by the attack, including assistance in data recovery.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/ex_ransomware.jpg?raw=true" alt="Ransomware Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'blank' && w == 'ransomware')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h1>Ransomware</h1>
+                                    
+                                    <h2>How Ransomware Works</h2>
+                                    <p>Ransomware is a type of malicious software designed to block access to a computer system or data, usually by encrypting it, until a ransom is paid. Attackers typically demand payment in cryptocurrency, making it difficult to trace. Ransomware can spread through phishing emails, malicious websites, or by exploiting vulnerabilities in software.</p>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/ransomware.jpg?raw=true" alt="Ransomware Attack" width="" height="300" style="display: block; margin: 0 auto;" />
+                                    
+                                    <h2>What You Can Do</h2>
+                                    <p>Before you fall victim to a ransomware attack, consider the following preventive measures:</p>
+                                    <ul>
+                                    <li><strong>Backup regularly:</strong> Regularly back up your critical data and ensure the backups are stored offline and are not connected to your network. This ensures you can recover your data without paying the ransom.</li>
+                                    <li><strong>Exercise caution with emails:</strong> Be wary of unsolicited emails, especially those with attachments or links. Verify the sender’s identity before clicking on any links or downloading attachments.</li>
+                                    <li><strong>Update software:</strong> Keep your operating system, applications, and security software up to date with the latest patches. This minimizes the risk of ransomware exploiting known vulnerabilities.</li>
+                                    </ul>
+                                    
+                                    <h2>How to Protect Your Business</h2>
+                                    <p>Implement these strategies to safeguard your business from ransomware:</p>
+                                    <ul>
+                                    <li><strong>Employee training:</strong> Educate your employees on how to recognize phishing emails and other ransomware delivery methods. Awareness is a crucial defense against ransomware.</li>
+                                    <li><strong>Implement security measures:</strong> Use robust security solutions, such as firewalls, antivirus software, and intrusion detection systems, to protect your network from ransomware threats.</li>
+                                    <li><strong>Network segmentation:</strong> Segment your network to limit the spread of ransomware. This way, even if one part of your network is infected, the ransomware won’t easily propagate to other areas.</li>
+                                    <li><strong>Access controls:</strong> Implement strict access controls and limit user permissions to reduce the risk of ransomware spreading throughout your network.</li>
+                                    </ul>
+                                    
+                                    <h2>What if You Fall for a Ransomware Attack</h2>
+                                    <p>If you become a victim of a ransomware attack, follow these steps:</p>
+                                    <ul>
+                                    <li><strong>Isolate infected systems:</strong> Immediately disconnect infected systems from the network to prevent the ransomware from spreading.</li>
+                                    <li><strong>Report the incident:</strong> Notify your IT department and follow your organization’s incident response plan. Reporting early can help contain the damage.</li>
+                                    <li><strong>Do not pay the ransom:</strong> Paying the ransom does not guarantee that you will regain access to your data, and it encourages further criminal activity. Instead, focus on recovering data from backups and restoring your systems.</li>
+                                    <li><strong>Engage professionals:</strong> Contact cybersecurity experts to assist in removing the ransomware and restoring your systems. They can also help identify the attack vector and prevent future incidents.</li>
+                                    <li><strong>Notify affected parties:</strong> If sensitive data has been compromised, notify the relevant stakeholders and provide them with guidance on protecting themselves.</li>
+                                    </ul>
+                                    <br>
+                                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lIsWpCMBxHQ" title="Ransomware Awareness Video" frameborder="0" allowfullscreen></iframe>
+                                    
+                                    <br>
+                                    <p style="color:red;">* To learn more about protecting yourself from ransomware based on your specific role, please select your role from the left pane.</p>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'employee' && w == 'social-engineering')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            
+                                    <h2>Employees: Social Engineering Attack Response</h2>
+                                    <p>If you suspect you have been targeted by a social engineering attack, follow these steps immediately:</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Social Engineering Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Report the Incident:</strong>
+                                    <ul>
+                                    <li>Immediately report the social engineering attack to the IT department and follow their instructions.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Disconnect from Network:</strong>
+                                    <ul>
+                                    <li>Disconnect the compromised device from the network to prevent further spread of the attack.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Change Passwords:</strong>
+                                    <ul>
+                                    <li>Change passwords for all accounts, especially those accessed through the compromised device.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Run Security Scans:</strong>
+                                    <ul>
+                                    <li>Use antivirus and anti-malware software to scan your device for any additional threats.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Follow IT Guidance:</strong>
+                                    <ul>
+                                    <li>Adhere to any additional steps provided by the IT department to secure your account and device.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Document the Incident:</strong>
+                                    <ul>
+                                    <li>Document all details of the incident, including how it was received, any information disclosed, and the initial response actions taken.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Stay Vigilant:</strong>
+                                    <ul>
+                                    <li>Be extra cautious with emails and communications and report any further suspicious activities immediately.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/em_social.jpg?raw=true" alt="Social Engineering Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                    
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'executive' && w == 'social-engineering')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h2>Executive Team: Social Engineering Attack Response</h2>
+                                    <p>In the event of a successful social engineering attack, the response steps should be clearly defined for each role to ensure a swift and effective reaction.</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Social Engineering Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Assess the Impact:</strong>
+                                    <ul>
+                                    <li>Evaluate the extent of the attack and what information was compromised.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Activate Incident Response Plan:</strong>
+                                    <ul>
+                                    <li>Ensure the incident response team is fully engaged and leading the mitigation efforts.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Coordinate with Legal and HR Teams:</strong>
+                                    <ul>
+                                    <li>Engage legal and HR teams to manage potential liabilities and compliance issues.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Internal Communication:</strong>
+                                    <ul>
+                                    <li>Inform key stakeholders, including board members and department heads, about the attack and the steps being taken.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>External Communication:</strong>
+                                    <ul>
+                                    <li>Prepare a public statement if necessary to address the attack, ensuring transparency and maintaining public trust.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Review and Improve Security Measures:</strong>
+                                    <ul>
+                                    <li>Conduct a post-incident analysis to identify weaknesses and implement stronger security measures to prevent future attacks.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Support for Affected Parties:</strong>
+                                    <ul>
+                                    <li>Provide support and guidance to employees affected by the attack.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/ex_social.jpg?raw=true" alt="Social Engineering Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    
+                                    else if(r == 'manager' && w == 'social-engineering')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h2>People Managers: Social Engineering Attack Response</h2>
+                                    <p>In the event of a successful social engineering attack, people managers should take the following steps to manage the situation effectively:</p>
+                                    <div class="section">
+                                    <h3>Steps to Take After a Social Engineering Attack:</h3>
+                                    <ol>
+                                    <li>
+                                    <strong>Report to IT and Upper Management:</strong>
+                                    <ul>
+                                    <li>Immediately inform the IT department and your direct superior about the incident.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Contain the Threat:</strong>
+                                    <ul>
+                                    <li>Work with the IT department to isolate affected systems and prevent further spread.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Identify and Assist Affected Team Members:</strong>
+                                    <ul>
+                                    <li>Determine which team members were affected and provide them with specific instructions to secure their systems.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Communicate with Your Team:</strong>
+                                    <ul>
+                                    <li>Clearly communicate the situation to your team and provide guidance on next steps.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Facilitate Forensic Analysis:</strong>
+                                    <ul>
+                                    <li>Assist the IT and security teams with collecting information and evidence for forensic analysis.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Reinforce Security Protocols:</strong>
+                                    <ul>
+                                    <li>Conduct an immediate refresher training session to reinforce cybersecurity best practices and prevent future incidents.</li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    <strong>Monitor for Further Threats:</strong>
+                                    <ul>
+                                    <li>Keep an eye on team activities and communications for signs of additional threats or suspicious behavior.</li>
+                                    </ul>
+                                    </li>
+                                    </ol>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/pm_social.jpg?raw=true" alt="Social Engineering Attack Response" width="" height="500" style="display: block; margin: 0 auto;" />
+                                    </div>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+                                    else if(r == 'blank' && w == 'social-engineering')
+                                    {
+                                                                    
+                                            document.getElementById('action').style.display = 'block';
+                                            document.getElementById('home').style.display = 'none';
+                                            document.getElementById('content-main').style.display = 'block';
+                                            document.getElementById('fl-statutes').style.display = 'none';
+                                            document.getElementById('content-main').innerHTML = `
+                                            <h1>Social Engineering Attacks</h1>
+                                    
+                                    <h2>How Social Engineering Works</h2>
+                                    <p>Social engineering is a form of cyber attack that exploits human psychology rather than technical vulnerabilities. Attackers manipulate individuals into divulging confidential information or performing actions that compromise security. Common tactics include impersonation, pretexting, phishing, and baiting, where the attacker gains the victim's trust to achieve their malicious goals.</p>
+                                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/social.jpg?raw=true" alt="Social Engineering Attack" width="" height="300" style="display: block; margin: 0 auto;" />
+                                    
+                                    <h2>What You Can Do</h2>
+                                    <p>To protect yourself and your organization from social engineering attacks, follow these best practices:</p>
+                                    <ul>
+                                    <li><strong>Be cautious of unsolicited requests:</strong> Always verify the identity of individuals requesting sensitive information or access, especially if the request is unexpected or urgent.</li>
+                                    <li><strong>Limit the sharing of personal information:</strong> Be mindful of the information you share publicly or over the phone, as attackers can use this information to impersonate you or someone you trust.</li>
+                                    <li><strong>Question suspicious scenarios:</strong> If something doesn’t feel right, take a moment to question the scenario. Scammers often create a sense of urgency to pressure you into making hasty decisions.</li>
+                                    </ul>
+                                    
+                                    <h2>How to Protect Your Business</h2>
+                                    <p>Implement these strategies to safeguard your business from social engineering attacks:</p>
+                                    <ul>
+                                    <li><strong>Employee training:</strong> Regularly train employees to recognize and respond to social engineering tactics. Awareness is your first line of defense against these types of attacks.</li>
+                                    <li><strong>Establish verification procedures:</strong> Implement strict procedures for verifying identities before granting access to sensitive information or systems. Use multi-factor authentication where possible.</li>
+                                    <li><strong>Limit access to information:</strong> Restrict access to sensitive data on a need-to-know basis. The less information available to potential attackers, the lower the risk of a successful social engineering attack.</li>
+                                    <li><strong>Monitor and log access:</strong> Keep detailed logs of access to sensitive information and systems. Monitoring access can help detect and respond to unauthorized attempts more quickly.</li>
+                                    </ul>
+                                    
+                                    <h2>What if You Fall for a Social Engineering Attack</h2>
+                                    <p>If you suspect you have been a victim of a social engineering attack, take the following steps:</p>
+                                    <ul>
+                                    <li><strong>Report the incident:</strong> Immediately report the attack to your IT department or security team. Early reporting can help mitigate the damage and prevent further exploitation.</li>
+                                    <li><strong>Change compromised credentials:</strong> If login credentials have been compromised, change them immediately. Enable multi-factor authentication to add an extra layer of security.</li>
+                                    <li><strong>Review access logs:</strong> Check access logs to identify any unauthorized actions or access that may have occurred as a result of the attack.</li>
+                                    <li><strong>Conduct a security audit:</strong> After the incident, perform a thorough security audit to identify vulnerabilities and implement corrective measures to prevent future attacks.</li>
+                                    </ul>
+                                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uMkOphesrqI" title="Social Engineering Awareness Video" frameborder="0" allowfullscreen></iframe>
+                                    
+                                    <br>
+                                    <p style="color:red;">* To learn more about protecting yourself from social engineering based on your specific role, please select your role from the left pane.</p>
+                                                `;
+                                            document.getElementById('ref').innerHTML = `
+                                                <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+                                                <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+                                                <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>        
+                                            `;
+                                            document.getElementById('action').innerHTML = `
+                                                 <h3>Action Area</h3>    
+                                                    <ul>
+                                                        <li>Contain the Breach</li>
+                                                        <li>Report and Communicate</li>
+                                                        <li>Facilitate Forensic Analysis</li>
+                                                        <li>Reinforce Security Measures</li>
+                                                    </ul>
+                                                `;
+                                    }
+
+
         else
         {
             document.getElementById('home').style.display = 'block';
@@ -455,6 +1706,101 @@ document.getElementById('ref').innerHTML = `
         <li><a href="https://www.ncsc.gov.uk/guidance/mobile-device-security">National Cyber Security Centre - Mobile Device Security</a></li>
 `;
 
+}
+else if(topic == 'mfa')
+    {
+        document.getElementById('content-main').innerHTML = `
+
+<h2>Multi-Factor Authentication</h2>
+
+<p>In an era where cyber threats are becoming increasingly sophisticated, relying solely on passwords for security is no longer sufficient. Multi-Factor Authentication (MFA) provides an additional layer of defense by requiring users to verify their identity through multiple means. This approach significantly reduces the likelihood of unauthorized access, even if a user's password is compromised.</p>
+
+<p>MFA works by combining two or more different types of authentication factors: something you know (like a password), something you have (like a smartphone or a security token), and something you are (biometric data such as fingerprints or facial recognition). By requiring more than one factor, MFA makes it much harder for attackers to gain access to accounts and systems, even if they have obtained one of the factors.</p>
+
+<img src="https://cdn.prod.website-files.com/6030224cd6bd6661c0d922f1/64fb4866477c47f2d0306a22_MFA%20glossary%20image.jpeg" alt="Multi-Factor Authentication" width="" height="300" style="display: block; margin: 0 auto;" />
+
+<p>🛡️ One common form of MFA is the use of SMS-based verification, where a code is sent to your mobile phone that you must enter to complete the login process. While this is a widely used method, it is not without its vulnerabilities. Attackers can intercept SMS messages through SIM swapping or other techniques, so it's crucial to be aware of these risks and consider more secure forms of MFA when available.</p>
+
+<p>🔐 Authenticator apps, such as Google Authenticator or Authy, offer a more secure alternative to SMS-based MFA. These apps generate time-based one-time passwords (TOTP) that expire after a short period, adding an extra layer of security. Because the codes are generated on your device and not transmitted over potentially insecure channels, authenticator apps are less susceptible to interception.</p>
+
+<iframe width="420" height="280" src="https://www.youtube.com/embed/0mvCeNsTa1g" style="display: block; margin: 0 auto;"></iframe>
+
+<p>Biometric authentication, which uses unique biological traits such as fingerprints, facial recognition, or iris scans, is another powerful form of MFA. These methods offer a high level of security because they are difficult to replicate or steal. However, users should be mindful of the privacy implications and ensure that their biometric data is stored securely. In cases where biometric data is stored on a device rather than in the cloud, the risk of data breaches is reduced.</p>
+
+<p>Incorporating MFA into your security practices is one of the most effective ways to protect your online accounts and sensitive information. Although MFA may introduce a slight inconvenience by adding an extra step to the login process, the enhanced security it provides is well worth the effort. Organizations should enforce MFA policies for all critical systems and encourage employees to enable MFA on personal accounts as well. By doing so, they can significantly reduce the risk of unauthorized access and protect valuable data from cyber threats.</p>
+
+`;
+}
+
+else if(topic == 'set')
+    {
+        document.getElementById('content-main').innerHTML = `
+
+        <h2>Social Engineering Threats</h2>
+
+        <p>Social engineering is a sophisticated and insidious form of cyberattack that exploits human psychology rather than technical vulnerabilities. Unlike traditional hacking methods, social engineering relies on tricking individuals into divulging sensitive information or performing actions that compromise security. These attacks are often subtle, making them difficult to detect and prevent. Understanding the various forms of social engineering and how to defend against them is crucial for maintaining both personal and organizational security.</p>
+        
+        <p>Phishing remains one of the most prevalent social engineering tactics. It typically involves sending fraudulent emails that appear to come from legitimate sources, such as banks, social media platforms, or colleagues. These emails often contain urgent messages designed to provoke an emotional response, such as a warning that your account has been compromised or that a payment is overdue. The goal is to trick the recipient into clicking on a malicious link or providing sensitive information, such as login credentials or credit card numbers.</p>
+        
+        <img src="https://cheapsslsecurity.com/blog/wp-content/uploads/2022/05/social-engineering-attacks-1.jpg" alt="Social Engineering Threats" width="" height="400" style="display: block; margin: 0 auto;" />
+        
+        <p>🛡️ Spear phishing is a more targeted form of phishing, where the attacker customizes the message to a specific individual or organization. By researching their target, the attacker can create a highly convincing email that appears to be from a trusted source. For example, a spear phishing email might appear to come from a CEO to a finance employee, instructing them to transfer funds to a certain account. Due to its personalized nature, spear phishing is particularly effective and dangerous.</p>
+        
+        <p>🔐 Another form of social engineering is pretexting, where an attacker fabricates a scenario to gain the victim's trust and obtain information. For example, an attacker might pose as a bank employee and ask for personal details to "verify your identity." The key to pretexting is the creation of a plausible story that convinces the victim to comply with the request. Defending against pretexting involves being cautious about sharing personal information and verifying the identity of anyone requesting sensitive data.</p>
+        
+        <iframe width="420" height="280" src="https://www.youtube.com/embed/2eVwBlKlMmE" style="display: block; margin: 0 auto;"></iframe>
+        
+        <p>Baiting is another social engineering tactic that exploits curiosity or greed. Attackers might leave infected USB drives labeled "Confidential" in public places, hoping someone will pick them up and plug them into their computer. Once connected, the USB drive installs malware that can steal data or give the attacker remote access to the victim's system. To avoid falling victim to baiting, never use unknown USB drives or other external devices.</p>
+        
+        <p>To defend against social engineering, awareness and education are key. Organizations should regularly train employees on the latest social engineering tactics and encourage a culture of skepticism when dealing with unsolicited requests for information or actions. By staying informed and vigilant, individuals and organizations can protect themselves from the manipulative tactics of social engineers.</p>
+`;
+}
+
+else if(topic == 'sbp')
+    {
+        document.getElementById('content-main').innerHTML = `
+
+        <h2>Secure Browsing Practices</h2>
+
+        <p>In today's interconnected world, browsing the internet has become a daily activity for most people. However, with this convenience comes a host of security risks. Whether you're checking your email, shopping online, or simply reading the news, secure browsing practices are essential to protect your personal information from cyber threats. Failing to follow these practices can lead to identity theft, financial loss, and other severe consequences.</p>
+        
+        <p>One of the most fundamental secure browsing practices is ensuring that you only visit websites that use HTTPS. HTTPS, or Hypertext Transfer Protocol Secure, encrypts the data exchanged between your browser and the website, making it significantly harder for attackers to intercept sensitive information like passwords, credit card numbers, and personal details. You can identify an HTTPS site by looking for the padlock icon in the address bar of your browser.</p>
+        
+        <img src="https://cybersecurityontario.ca/_repo/images/secure-web-browsing.png" alt="Secure Browsing Practices" width="" height="400" style="display: block; margin: 0 auto;" />
+        
+        <p>🛡️ Another critical aspect of secure browsing is the use of ad blockers and anti-tracking tools. Advertisements can often be gateways for malware, especially on less reputable sites. Ad blockers prevent these ads from appearing, reducing your exposure to potential threats. Additionally, many websites track your browsing habits, creating profiles that can be exploited by malicious actors. Anti-tracking tools help protect your privacy by blocking these trackers and ensuring that your online activities remain confidential.</p>
+        
+        <p>🔐 Using a Virtual Private Network (VPN) is another effective way to secure your browsing experience, particularly when connected to public Wi-Fi networks. Public Wi-Fi is notoriously insecure, making it easy for hackers to intercept your data. A VPN encrypts your internet traffic, creating a secure tunnel between your device and the websites you visit. This not only protects your data from eavesdroppers but also helps maintain your anonymity online.</p>
+        
+        <iframe width="420" height="280" src="https://www.youtube.com/embed/xa7qaSJeyRQ" style="display: block; margin: 0 auto;"></iframe>
+        
+        <p>Another practice to enhance your browsing security is to regularly update your browser and plugins. Software updates often include patches for security vulnerabilities that could otherwise be exploited by hackers. Ensuring that your browser and any installed plugins are up to date minimizes the risk of falling victim to attacks that exploit these weaknesses.</p>
+        
+        <p>Finally, be mindful of the information you share online. Avoid entering sensitive data, such as social security numbers or financial information, on websites that you don't fully trust. If a website requests such information, ensure that it is legitimate by verifying the domain name and researching the site if necessary. By following these secure browsing practices, you can significantly reduce your risk of encountering online threats and protect your personal and organizational data.</p>
+`;
+}
+else
+    {
+        document.getElementById('content-main').innerHTML = `
+
+        <h2>Secure Browsing Practices</h2>
+
+        <p>In today's interconnected world, browsing the internet has become a daily activity for most people. However, with this convenience comes a host of security risks. Whether you're checking your email, shopping online, or simply reading the news, secure browsing practices are essential to protect your personal information from cyber threats. Failing to follow these practices can lead to identity theft, financial loss, and other severe consequences.</p>
+        
+        <p>One of the most fundamental secure browsing practices is ensuring that you only visit websites that use HTTPS. HTTPS, or Hypertext Transfer Protocol Secure, encrypts the data exchanged between your browser and the website, making it significantly harder for attackers to intercept sensitive information like passwords, credit card numbers, and personal details. You can identify an HTTPS site by looking for the padlock icon in the address bar of your browser.</p>
+        
+        <img src="https://cybersecurityontario.ca/_repo/images/secure-web-browsing.png" alt="Secure Browsing Practices" width="" height="400" style="display: block; margin: 0 auto;" />
+        
+        <p>🛡️ Another critical aspect of secure browsing is the use of ad blockers and anti-tracking tools. Advertisements can often be gateways for malware, especially on less reputable sites. Ad blockers prevent these ads from appearing, reducing your exposure to potential threats. Additionally, many websites track your browsing habits, creating profiles that can be exploited by malicious actors. Anti-tracking tools help protect your privacy by blocking these trackers and ensuring that your online activities remain confidential.</p>
+        
+        <p>🔐 Using a Virtual Private Network (VPN) is another effective way to secure your browsing experience, particularly when connected to public Wi-Fi networks. Public Wi-Fi is notoriously insecure, making it easy for hackers to intercept your data. A VPN encrypts your internet traffic, creating a secure tunnel between your device and the websites you visit. This not only protects your data from eavesdroppers but also helps maintain your anonymity online.</p>
+        
+        <iframe width="420" height="280" src="https://www.youtube.com/embed/xa7qaSJeyRQ" style="display: block; margin: 0 auto;"></iframe>
+        
+        <p>Another practice to enhance your browsing security is to regularly update your browser and plugins. Software updates often include patches for security vulnerabilities that could otherwise be exploited by hackers. Ensuring that your browser and any installed plugins are up to date minimizes the risk of falling victim to attacks that exploit these weaknesses.</p>
+        
+        <p>Finally, be mindful of the information you share online. Avoid entering sensitive data, such as social security numbers or financial information, on websites that you don't fully trust. If a website requests such information, ensure that it is legitimate by verifying the domain name and researching the site if necessary. By following these secure browsing practices, you can significantly reduce your risk of encountering online threats and protect your personal and organizational data.</p>
+`;
 }
             }
         
