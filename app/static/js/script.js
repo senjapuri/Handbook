@@ -127,7 +127,7 @@ function showContentOnBtn()
 <li>
 <strong>Coordinate with Legal and Regulatory Authorities:</strong>
 <ul>
-<li>Report the breach to relevant authorities as required by Florida’s Local Government Cybersecurity Act (F.S. 282.3185).</li>
+<li>Report the breach to relevant authorities as required by <a href="https://www.flsenate.gov/Laws/Statutes/2024/282.3185">Florida’s Local Government Cybersecurity Act (F.S. 282.3185).</a></li>
 <li>Engage legal counsel to manage potential liabilities and compliance issues.</li>
 </ul>
 </li>
@@ -1223,7 +1223,7 @@ document.getElementById('action').innerHTML = `
                                     <li>
                                     <strong>Coordinate with Legal and Regulatory Authorities:</strong>
                                     <ul>
-                                    <li>Report the attack to relevant authorities as required by Florida’s Local Government Cybersecurity Act (F.S. 282.3185).</li>
+                                    <li>Report the attack to relevant authorities as required by <a href="https://www.flsenate.gov/Laws/Statutes/2024/282.3185">Florida’s Local Government Cybersecurity Act (F.S. 282.3185).</a></li>
                                     <li>Engage legal counsel to manage potential liabilities and compliance issues.</li>
                                     </ul>
                                     </li>
