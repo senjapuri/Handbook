@@ -296,7 +296,79 @@ document.getElementById('action').innerHTML = `
                 </ul>
 `;
         }
-
+        else if(r == 'blank' && w == 'apts')
+            {
+                document.getElementById('action').style.display = 'block';
+                    document.getElementById('home').style.display = 'none';
+                    document.getElementById('content-main').style.display = 'block';
+                    document.getElementById('fl-statutes').style.display = 'none';
+                    document.getElementById('content-main').innerHTML = `
+                    <h1>Advanced Persistent Threats (APTs)</h1>
+    
+                    <h2>How APTs Work</h2>
+                    <p>Advanced Persistent Threats (APTs) refer to prolonged and targeted cyber attacks in which an intruder gains access to a network and remains undetected for an extended period. Unlike other forms of cyber attacks, which often involve short-term exploitation, APTs are characterized by their stealth and persistence. Attackers typically aim to steal data, spy on activities, or disrupt operations, targeting high-value assets such as intellectual property, government secrets, or personal information.</p>
+                    <img src="https://github.com/senjapuri/Handbook/blob/main/website%20content/images/apt.png?raw=true" alt="Advanced Persistent Threats Illustration" width="" height="300" style="display: block; margin: 0 auto;" />
+                    
+                    <h2>Recognizing APTs</h2>
+                    <p>APTs often employ sophisticated techniques that blend in with regular network traffic, making them difficult to detect. Some signs that your organization might be under an APT attack include:</p>
+                    <ul>
+                      <li><strong>Unusual network activity:</strong> Monitoring tools may show unexpected data flows or communication with unfamiliar IP addresses.</li>
+                      <li><strong>Repeated phishing attempts:</strong> Attackers may use targeted phishing emails to gain access to privileged accounts.</li>
+                      <li><strong>Slow or unstable systems:</strong> Systems may begin to slow down or crash unexpectedly due to the covert operations of the APT.</li>
+                      <li><strong>Unauthorized access:</strong> Logs may reveal unauthorized access to sensitive areas of the network, often during off-hours.</li>
+                    </ul>
+                    
+                    <h2>What You Can Do</h2>
+                    <p>To defend against APTs, your organization should adopt a multi-layered security strategy:</p>
+                    <ul>
+                      <li><strong>Regular system audits:</strong> Conduct frequent audits of your systems and networks to identify and address vulnerabilities before they can be exploited.</li>
+                      <li><strong>Advanced threat detection tools:</strong> Implement and regularly update advanced threat detection and response tools that can identify suspicious patterns indicative of APT activity.</li>
+                      <li><strong>Educate employees:</strong> Ensure that all staff are trained to recognize and report suspicious emails, links, and attachments.</li>
+                      <li><strong>Limit access:</strong> Use the principle of least privilege to restrict access to sensitive data and systems to only those who need it for their roles.</li>
+                    </ul>
+                    
+                    <h2>How to Protect Your Business</h2>
+                    <p>Preventing APTs requires a combination of proactive and reactive security measures:</p>
+                    <ul>
+                      <li><strong>Deploy endpoint detection and response (EDR):</strong> Use EDR tools to monitor, detect, and respond to potential threats on all endpoints, such as computers, mobile devices, and servers.</li>
+                      <li><strong>Utilize network segmentation:</strong> Segregate critical systems and sensitive data from the rest of the network to limit the damage of an APT if they gain access.</li>
+                      <li><strong>Regularly update security protocols:</strong> Stay current with the latest security patches and updates for all software and hardware to close vulnerabilities.</li>
+                      <li><strong>Incident response plan:</strong> Develop and regularly update an incident response plan that outlines specific steps to take if an APT is detected.</li>
+                    </ul>
+                    
+                    <h2>What if You Detect an APT?</h2>
+                    <p>If you suspect that your organization is under an APT attack, take the following steps:</p>
+                    <ul>
+                      <li><strong>Isolate the threat:</strong> Immediately disconnect compromised systems from the network to prevent further access and data exfiltration.</li>
+                      <li><strong>Engage with experts:</strong> Contact cybersecurity experts or a third-party security firm with experience in handling APTs for a comprehensive threat assessment.</li>
+                      <li><strong>Forensic investigation:</strong> Conduct a thorough investigation to determine the extent of the intrusion, the data accessed, and the entry point used by the attackers.</li>
+                      <li><strong>Notify affected parties:</strong> Inform stakeholders, including employees, customers, and possibly regulatory bodies, about the breach and the steps being taken to mitigate it.</li>
+                      <li><strong>Strengthen defenses:</strong> Post-incident, review and reinforce your security measures to prevent future APTs, including updating firewalls, intrusion detection systems, and employee training.</li>
+                    </ul>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rqbl65cJMuA" title="Advanced Persistent Threats Awareness Video" frameborder="0" allowfullscreen></iframe>
+                    
+                    <br>
+                    <p style="color:red;">* To learn more about protecting your organization from Advanced Persistent Threats based on your specific role, please select your role from the left pane.</p>
+    
+    `;
+                    document.getElementById('ref').innerHTML = `
+    <li><a href="https://www.fbi.gov/investigate/cyber/ransomware" target="_blank">FBI - Ransomware</a></li>
+    <li><a href="https://www.cisa.gov/ransomware" target="_blank">CISA - Ransomware</a></li>
+    <li><a href="https://us-cert.cisa.gov/Ransomware" target="_blank">US-CERT - Ransomware</a></li>
+        
+    `;
+    document.getElementById('action').innerHTML = `
+     <h3>Action Area</h3>
+                   
+                    <ul>
+                        <li>Contain the Breach</li>
+                        <li>Report and Communicate</li>
+                         <li>Facilitate Forensic Analysis</li>
+                          <li>Reinforce Security Measures</li>
+                    </ul>
+    `;
+            }
         else if(r == 'manager' && w == 'ransomware')
             {
                 document.getElementById('action').style.display = 'block';
@@ -1600,7 +1672,7 @@ document.getElementById('action').innerHTML = `
                                     <li><strong>Conduct a security audit:</strong> After the incident, perform a thorough security audit to identify vulnerabilities and implement corrective measures to prevent future attacks.</li>
                                     </ul>
                                     
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uMkOphesrqI" title="Social Engineering Awareness Video" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v7VTJhkJUUY" title="Social Engineering Awareness Video" frameborder="0" allowfullscreen></iframe>
                                     
                                     <br>
                                     <p style="color:red;">* To learn more about protecting yourself from social engineering based on your specific role, please select your role from the left pane.</p>
