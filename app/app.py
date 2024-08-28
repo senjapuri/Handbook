@@ -38,6 +38,13 @@ def home():
 def content():
     return render_template('content.html')
 
+
+@app.route('/<role>_<wtd>')
+def dynamic_route(role, wtd):
+    # Render a template corresponding to the role and wtd combination
+    template_name = f"{role}_{wtd}.html"
+    return render_template(template_name)
+
 @app.route('/login', methods=['POST'])
 def login():
     username = request.form['username']

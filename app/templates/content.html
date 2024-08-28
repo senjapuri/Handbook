@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Handbook</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Official_USF_Bulls_Athletic_Logo.png" alt="USF University Logo">
-        <h1>Cyber Florida: The Florida Center for Cybersecurity</h1>
-    </header>
 
-    <div class="container">
-        <div class="left-pane">
-            <br>
-            <br>
-            
-            <h3>What to do if...</h3>
-            
-            <select id="wtd" style="
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Handbook</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+ 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex flex-column" style="background-color: #f0f0f0">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Official_USF_Bulls_Athletic_Logo.png" alt="">
+    </div>
+
+    <a href="#header" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Handbook</h1>
+      
+    </a>
+   
+    
+    <div class="social-links text-center">
+      
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-envelope"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active" style="color: black;font-size: 15px;"><b><i class="bi bi-patch-question-fill"></i>&nbsp;&nbsp;&nbsp;What to do if</b></a></li>
+        <select id="wtd" style="
         
             font-size: 16px; /* Font size */
             color: #333; /* Text color */
-            background-color: #f9f9f9; /* Background color */
+            background-color: white; /* Background color */
             border: 1px solid #ccc; /* Border style */
             border-radius: 4px; /* Rounded corners */
             padding: 8px 12px; /* Padding inside the select box */
-            width: 200px; /* Width of the select box */
+            width: 230px; /* Width of the select box */
             cursor: pointer; /* Cursor style when hovering */
             transition: border-color 0.3s ease; /* Smooth border color transition */
         ">
@@ -47,353 +80,617 @@
                 <!-- <option value="zero-day">Zero-Day Exploits</option> -->
                 <option value="data-breach">Data Breaches</option>
             </select>
-            <br><br>
-            
-            <h3>Role</h3>
-            <select id="role" style="
+        <br>
+        <li><a href="#hero" class="active" style="color: black;font-size: 15px;"><b><i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Your Role</b></a></li>
+        
+        <select id="role" style="
         
             font-size: 16px; /* Font size */
             color: #333; /* Text color */
-            background-color: #f9f9f9; /* Background color */
+            background-color: white; /* Background color */
             border: 1px solid #ccc; /* Border style */
             border-radius: 4px; /* Rounded corners */
             padding: 8px 12px; /* Padding inside the select box */
-            width: 200px; /* Width of the select box */
+            width: 230px; /* Width of the select box */
             cursor: pointer; /* Cursor style when hovering */
             transition: border-color 0.3s ease; /* Smooth border color transition */
         ">
+                <option value="blank" style="color: #888;">Select a role</option>
+                <option value="executive">Executive</option>
+                <option value="manager">Manager</option>
+                <option value="employee">Employee</option>
+            </select>
+            <br>
+            <button onclick="redirectToPage()" style="color: white; background-color: #006747;padding-right: 10px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;border: 1px solid #005432;border-radius: 5px;margin-top: 10px;margin-bottom: 10px;">Search</button>
+
+      </ul>
+    </nav>
+    <div style="position: absolute; bottom: 0;padding-bottom: 20px;">
+    <h5><b>Topical Search</b></h5>
+    <ul style="list-style-type: none;padding: 5px;">
+      <li><a href="#" id="mds"><i class="bi bi-phone"></i>&nbsp;&nbsp;Mobile Device Security</a></li>
+      <li><a href="#" id="sbp"><i class="bi bi-browser-chrome"></i>&nbsp;&nbsp;Secure Browsing Practices</a></li>
+      <li><a href="#" id="set"><i class="bi bi-signal"></i>&nbsp;&nbsp;Social Engineering Threats</a></li>
+      <li><a href="#" id="mfa"><i class="bi bi-fingerprint"></i>&nbsp;&nbsp;Multi-Factor Authentication</a></li>
+      
+    </ul>
+    </div>
+  </header>
+  <div class="" style="background-color:#005432;margin: 0;padding: 10px;width: 100%;position: fixed;z-index: 1000; ">
+    <h3 style="text-align: center;color:white"><b>Cyber Florida: The Florida Center for Cybersecurity</b></h3><!-- End Portfolio Filters -->
+  </div>
+
+  <main class="">
+
+    <section id="hero" class="portfolio section" style="padding: 0;">
+
+      <div class="container section-title" style="margin: 0;padding: 30px;">
         
-            <option value="blank" style="color: #888;">Select a role</option>
-            <option value="executive">Executive</option>
-            <option value="manager">Manager</option>
-            <option value="employee">Employee</option>
-        </select>
+      </div>
+      <!-- Section Title -->
+      <div class="container section-title" style="margin: 0;padding: 5px;">
+        <ul class="portfolio-filters isotope-filters">
+          <li onclick="location.href='#header';" data-filter="*" class="filter-active" style="padding: 12px;border-bottom:5px solid #006747;"><b>Home</b></li>
+          <li data-filter=".filter-app" style="padding: 12px;border-bottom:5px solid white;"><b>Settings</b></li>
+          <li data-filter=".filter-product" style="padding: 12px;border-bottom:5px solid white;"><b>FL Cybersecurity Laws</b></li>
+          <li onclick="location.href='#contact';" data-filter=".filter-branding" style="padding: 12px;border-bottom:5px solid white;"><b>Contact Us</b></li>
         
-            <br>
-            <br>
-            <hr>
-            <br>
-            <button onclick="showContentOnBtn()" style="
-    background-color: #00703c; /* Button background color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    border-radius: 10px; /* Rounded corners */
-    
-    font-size: 16px; /* Font size */
-    padding: 5px 15px; /* Padding inside the button */
-    cursor: pointer; /* Cursor style when hovering */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and transform transitions */
-">
-    <b><i class="fa fa-search"></i>    Search</b>
-</button>
+        </ul><!-- End Portfolio Filters -->
+        <hr>
+      </div>
+      <br>
+        <div class="container section-title">
+        <h2>Welcome to the Cybersecurity Handbook</h2>
+        <p>This guide aims to provide a clear and accessible introduction to cybersecurity concepts and terminology, raising awareness about common cyber threats and how to recognize them. It emphasizes the importance of every employee's role and responsibility in maintaining cybersecurity, offering practical guidance for preventing, detecting, and reporting cyber incidents. Additionally, it serves as a quick reference guide during a suspected cyber-attack, ensuring that employees are well-equipped to respond effectively.</p>
+        <!--<img src="https://media0.giphy.com/media/U7lhygEmdhGO8yE75x/200.gif" alt="Mobile Security" width="" height="" style="display: block; margin: 0 auto;" />
+        --><br><hr>
+                <section id="skills" class="skills section light-background">
 
-
-            <br>
-            <br>     <br>
-            <br><br><br><br><br><br><br><br><br>
-            <h3>Topical search</h3>
-            <ul>
-                <li><button onclick="topicalSearch('mds')">Mobile Device Security</button></li>
-                <li><button onclick="topicalSearch('sbp')">Secure Browsing Practices</button></li>
-                <li><button onclick="topicalSearch('set')">Social Engineering Threats</button></li>
-                <li><button onclick="topicalSearch('mfa')">Multi-Factor Authentication</button></li>
-            </ul>
-        </div>
-
-        <div class="center-pane">
-            <div class="nav-bar">
-                <button href="#" onclick="showhome()"  style="color:white;">Home</button>
-                <a href="#" onclick="showContent('settings')">Settings</a>
-                <button href="#" onclick="showfl()" style="color:white;">FL Cybersecurity Laws</button>
-                <a href="#" onclick="showContent('contact-us')">Contact Us</a>
-            </div>
-            <div id="content">
-                <div id="home" class="content-section active">
-                    <br>
-                    <img src="https://media0.giphy.com/media/U7lhygEmdhGO8yE75x/200.gif" alt="Mobile Security" width="" height="" style="display: block; margin: 0 auto;" />
+                  <!-- Section Title -->
+                  <div class="container section-title">
+                    <h6 style="text-align: center;font-weight: bold;"><i>"Practicing cybersecurity basics helps protect your business and reduce cyber attack risks"</i></h6>
                     
-                    <h1>Welcome to the Cybersecurity Handbook</h1>
+                  </div><!-- End Section Title -->
+                </section><!-- /Skills Section -->
+                <br>
+                    <h3>What is Cybersecurity?</h3>
+<p>Cybersecurity involves protecting systems, networks, and programs from digital attacks aimed at accessing, altering, or destroying sensitive data, extorting money, or disrupting operations. Effective measures reduce risks and prevent unauthorized exploitation. The Local Government Cybersecurity Act (F.S. 282.3185) mandates that local governments adhere to minimum standards and best practices, including those from the NIST Cybersecurity Framework.</p>
+<br>
 
-                    <h2>Objectives of the Handbook</h2>
-                    <ul>
-                        <li>Provide a clear, accessible introduction to cybersecurity concepts and terminology.</li>
-                        <li>Raise awareness about common cyber threats and how to recognize them.</li>
-                        <li>Clarify every employee's role and responsibility in maintaining cybersecurity.</li>
-                        <li>Offer practical guidance for preventing, detecting, and reporting cyber incidents.</li>
-                        <li>Serve as a quick reference guide during a suspected cyber-attack.</li>
-                    </ul>
-                    <h1>What is Cybersecurity?</h1>
-<p>Cybersecurity refers to the practice of protecting systems, networks, and programs from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes. Effective cybersecurity reduces the risk of cyber-attacks and protects organizations and individuals from the unauthorized exploitation of systems, networks, and technologies.</p>
-<p>The Local Government Cybersecurity Act (F.S. 282.3185) provides a legal framework for local governments to follow, ensuring that all cybersecurity measures meet minimum standards and best practices, such as those outlined by the National Institute of Standards and Technology (NIST) Cybersecurity Framework.</p>
-<h2>Why is Cybersecurity Important?</h2>
-<p>In today's connected world, everyone benefits from advanced cyber defense programs. At an individual level, a cybersecurity attack can result in everything from identity theft to extortion attempts. Everyone relies on critical infrastructure like power plants, hospitals, and financial service companies. Securing these and other organizations is essential to keeping our society functioning.</p>
-<p>For businesses and government organizations, cybersecurity threats can lead to:</p>
-<ul>
-<li>Theft of intellectual property, business plans, and sensitive employee/citizen data</li>
-<li>Disruption to operations or destruction of data</li>
-<li>Financial losses and costs associated with remediation and reputational damage</li>
-<li>Legal liabilities and regulatory fines</li>
-</ul>
-<p>Cybersecurity is important because government, military, corporate, financial, and medical organizations collect, process, and store unprecedented amounts of data on computers and other devices. A significant portion of that data can be sensitive information, whether that be intellectual property, financial data, personal information, or other types of data for which unauthorized access or exposure could have negative consequences.</p>
-<h2>Real-Life Examples</h2>
-<ol>
-<li><strong>WannaCry Ransomware Attack (2017):</strong> This worldwide cyberattack affected more than 200,000 computers across 150 countries, with total damages ranging from hundreds of millions to billions of dollars.</li>
-<li><strong>Equifax Data Breach (2017):</strong> Equifax, one of the largest credit bureaus in the U.S., suffered a breach that exposed about 147.9 million consumers. The attackers accessed information including Social Security numbers, birth dates, addresses, and in some cases driver's license numbers.</li>
-<li><strong>SolarWinds Supply Chain Attack (2020):</strong> Russian hackers compromised the infrastructure of SolarWinds, a company that produces a network and applications monitoring platform called Orion, and then used that access to produce and distribute trojanized updates to the software's users, including several U.S. federal agencies.</li>
-</ol>
-<h2>Your Role in Cybersecurity</h2>
-<h3>Every Employee's Responsibility</h3>
-<p>Cybersecurity is not solely the responsibility of the IT department or the security team. Every employee, regardless of their role, has a part to play in keeping our organization secure. Here are some key responsibilities:</p>
-<ul>
-<li>Be aware of potential threats and how to recognize them.</li>
-<li>Follow security policies and procedures.</li>
-<li>Protect sensitive data and systems access.</li>
-<li>Report any suspected security incidents promptly.</li>
-</ul>
-<p>The Local Government Cybersecurity Act mandates that all local government employees with access to the local government’s network complete basic cybersecurity training within 30 days of starting their employment and annually thereafter. For technology professionals and employees with access to highly sensitive information, advanced cybersecurity training is required within 30 days of starting and annually thereafter.</p>
-<h2>Importance of Vigilance</h2>
-<p>Vigilance is key to preventing cyber incidents. Here are some ways to stay vigilant:</p>
-<ol>
-<li>Be cautious when clicking on links or downloading attachments, even if they appear to be from a trusted source.</li>
-<li>Be wary of unsolicited or unexpected emails, especially those requesting sensitive information.</li>
-<li>Double-check the authenticity of a website before entering login credentials or sensitive data.</li>
-<li>Keep an eye out for signs of a potential breach, such as system slowdowns or suspicious activity.</li>
-</ol>
-<h2>Cybersecurity Incident Severity Levels</h2>
-<p>The level of severity of the cybersecurity incident is defined by the National Cyber Incident Response Plan of the United States Department of Homeland Security as follows:</p>
-<ul>
-<li><strong>Level 5:</strong> An emergency-level incident within the specified jurisdiction that poses an imminent threat to the provision of wide-scale critical infrastructure services; national, state, or local government security; or the lives of the country's, state's, or local government's residents.</li>
-<li><strong>Level 4:</strong> A severe-level incident that is likely to result in a significant impact in the affected jurisdiction to public health or safety; national, state, or local security; economic security; or civil liberties.</li>
-<li><strong>Level 3:</strong> A high-level incident that is likely to result in a demonstrable impact in the affected jurisdiction to public health or safety; national, state, or local security; economic security; civil liberties; or public confidence.</li>
-<li><strong>Level 2:</strong> A medium-level incident that may impact public health or safety; national, state, or local security; economic security; civil liberties; or public confidence.</li>
-<li><strong>Level 1:</strong> A low-level incident that is unlikely to impact public health or safety; national, state, or local security; economic security; civil liberties; or public confidence.</li>
-</ul>
-                </div>
-                <div id="fl-statutes" class="content-section">
-                    <h1>Florida Cybersecurity Statutes and Laws</h1>
-                    <p>The state of Florida has implemented several statutes and laws to enhance cybersecurity and protect sensitive information. Some key statutes include:</p>
+<section id="services" class="services section">
 
-                    <h2>F.S. 282.3185 - Local Government Cybersecurity Act</h2>
-                    <p>The Local Government Cybersecurity Act mandates cybersecurity standards and reporting requirements for local governments in Florida. It emphasizes the need for local governments to adopt cybersecurity best practices, conduct regular risk assessments, and report cybersecurity incidents to the appropriate state authorities.</p>
-                    <ul>
-                        <li>Requires local governments to establish and implement cybersecurity programs.</li>
-                        <li>Mandates regular cybersecurity training for employees.</li>
-                        <li>Requires reporting of cybersecurity incidents to the Florida Digital Service.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/282.3185" target="_blank">Local Government Cybersecurity Act (F.S. 282.3185)</a></p>
+  <!-- Section Title -->
+  <div class="container section-title" style="padding: 0px;">
+    <h3>Importance of Cybersecurity</h3>
+    <p>Cybersecurity is crucial in safeguarding sensitive information, ensuring business continuity, and protecting against financial and reputational damage. As digital threats continue to evolve, maintaining robust cybersecurity measures is essential to secure our digital lives.</p>
+  </div><!-- End Section Title -->
+<br>
+  <div class="container">
 
-                    <h2>F.S. 501.171 - Florida Information Protection Act (FIPA)</h2>
-                    <p>The Florida Information Protection Act requires businesses and government entities to protect personal information and notify individuals of data breaches. It outlines specific measures for safeguarding data and sets timelines for breach notifications.</p>
-                    <ul>
-                        <li>Requires reasonable measures to protect personal information.</li>
-                        <li>Mandates breach notification to affected individuals within 30 days.</li>
-                        <li>Imposes penalties for non-compliance.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/501.171" target="_blank">Florida Information Protection Act (FIPA) (F.S. 501.171)</a></p>
+    <div class="row gy-4">
 
-                    <h2>F.S. 668.50 - Uniform Electronic Transaction Act</h2>
-                    <p>The Uniform Electronic Transaction Act provides a legal framework for secure electronic transactions and signatures in Florida. It ensures that electronic records and signatures are as legally binding as their paper counterparts.</p>
-                    <ul>
-                        <li>Recognizes electronic signatures and records as legally valid.</li>
-                        <li>Facilitates electronic transactions between parties.</li>
-                        <li>Ensures the security and integrity of electronic records.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/668.50" target="_blank">Uniform Electronic Transaction Act (F.S. 668.50)</a></p>
-
-                    <h2>F.S. 282.0041 - State Technology Office and Cybersecurity Responsibilities</h2>
-                    <p>This statute defines the responsibilities of the State Technology Office regarding cybersecurity. It outlines the office's duties in developing and implementing cybersecurity policies, procedures, and standards for state agencies.</p>
-                    <ul>
-                        <li>Establishes the State Technology Office's role in cybersecurity.</li>
-                        <li>Mandates the development of cybersecurity policies and procedures.</li>
-                        <li>Requires state agencies to comply with cybersecurity standards.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/282.0041" target="_blank">State Technology Office and Cybersecurity Responsibilities (F.S. 282.0041)</a></p>
-
-                    <h2>F.S. 282.318 - Enterprise Security of Data and Information Technology</h2>
-                    <p>This statute requires state agencies to establish and maintain an enterprise cybersecurity program. It emphasizes the importance of protecting state data and information technology resources from unauthorized access and other cyber threats.</p>
-                    <ul>
-                        <li>Mandates enterprise cybersecurity programs for state agencies.</li>
-                        <li>Requires regular security assessments and audits.</li>
-                        <li>Establishes incident response protocols.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/282.318" target="_blank">Enterprise Security of Data and Information Technology (F.S. 282.318)</a></p>
-
-                    <h2>F.S. 282.319 - Florida Cybersecurity Governance Act</h2>
-                    <p>This statute establishes the governance framework for cybersecurity in Florida. It outlines the roles and responsibilities of various state entities in maintaining and improving the state's cybersecurity posture.</p>
-                    <ul>
-                        <li>Establishes the Florida Cybersecurity Advisory Council.</li>
-                        <li>Mandates the development of a statewide cybersecurity strategy.</li>
-                        <li>Requires state agencies to report cybersecurity incidents.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/282.319" target="_blank">Florida Cybersecurity Governance Act (F.S. 282.319)</a></p>
-
-                    <h2>F.S. 1004.444 - Florida Center for Cybersecurity</h2>
-                    <p>This statute establishes the Florida Center for Cybersecurity at the University of South Florida. The center aims to enhance cybersecurity education, research, and outreach across the state.</p>
-                    <ul>
-                        <li>Promotes cybersecurity education and workforce development.</li>
-                        <li>Facilitates research and innovation in cybersecurity.</li>
-                        <li>Engages in public outreach to raise cybersecurity awareness.</li>
-                    </ul>
-                    <p><a href="https://www.flsenate.gov/Laws/Statutes/2024/1004.444" target="_blank">Florida Center for Cybersecurity (F.S. 1004.444)</a></p>
-                </div>
-
-                <div id="content-main">
-            
-                </div>
-                <div id="ransomware" class="content-section">
-                    <h2>Ransomware Attack</h2>
-                    <p>Ransomware is a type of malware that encrypts a victim's files, making them inaccessible, and demands a ransom payment to decrypt them. Ransomware attacks can be devastating to an organization, causing significant downtime, data loss, and financial harm.</p>
-                    <ul>
-                        <li>Unable to open normal files and get error messages instead</li>
-                        <li>Files with strange extensions like .encrypted, .locked, .crypto</li>
-                        <li>Ransom notes in your directories or on your desktop</li>
-                    </ul>
-                </div>
-                <div id="apts" class="content-section">
-                    <h2>Advanced Persistent Threats (APTs)</h2>
-                    <p>APTs are prolonged and targeted cyber-attacks aimed at stealing sensitive information. These attacks typically involve stealthy tactics to gain unauthorized access to a network and remain undetected for an extended period.</p>
-                    <ul>
-                        <li>Unusual network activity, such as unexpected data transfers</li>
-                        <li>Unauthorized access to confidential information</li>
-                        <li>Presence of unfamiliar programs or processes running on your system</li>
-                    </ul>
-                </div>
-                <div id="dos" class="content-section">
-                    <h2>DoS/DDoS Attack</h2>
-                    <p>Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks aim to disrupt normal traffic to a web service, making it unavailable to users. These attacks often involve overwhelming the target with a flood of internet traffic.</p>
-                    <ul>
-                        <li>Slow or unresponsive websites</li>
-                        <li>Unable to access online services</li>
-                        <li>Significant increase in traffic from multiple sources</li>
-                    </ul>
-                </div>
-                <div id="insider" class="content-section">
-                    <h2>Insider Threat</h2>
-                    <p>Insider threats involve malicious activities carried out by individuals within the organization. These insiders may have legitimate access to the network and use it to cause harm or steal sensitive information.</p>
-                    <ul>
-                        <li>Unusual access patterns or behavior from employees</li>
-                        <li>Unauthorized access to sensitive data</li>
-                        <li>Suspicious downloads or transfers of information</li>
-                    </ul>
-                </div>
-                <div id="sql-injection" class="content-section">
-                    <h2>SQL Injection</h2>
-                    <p>SQL injection attacks target web applications by injecting malicious SQL code into input fields, allowing attackers to manipulate databases and gain unauthorized access to sensitive information.</p>
-                    <ul>
-                        <li>Error messages containing SQL code</li>
-                        <li>Unauthorized access to database content</li>
-                        <li>Unexpected behavior from web applications</li>
-                    </ul>
-                </div>
-                <div id="malware" class="content-section">
-                    <h2>Malware Infections</h2>
-                    <p>Malware infections can cause significant damage to your systems and data. Malware includes viruses, worms, Trojan horses, ransomware, and spyware, and can be delivered through email attachments, downloads, or websites.</p>
-                    <ul>
-                        <li>System crashes or slow performance</li>
-                        <li>Unexpected pop-ups or ads</li>
-                        <li>Unusual files or programs on your computer</li>
-                    </ul>
-                </div>
-                <div id="social-engineering" class="content-section">
-                    <h2>Social Engineering</h2>
-                    <p>Social engineering attacks involve manipulating individuals into divulging confidential information. Attackers use psychological tricks to deceive victims, often posing as trustworthy figures or organizations.</p>
-                    <ul>
-                        <li>Unsolicited requests for sensitive information</li>
-                        <li>Impersonation of trusted entities</li>
-                        <li>Suspicious phone calls or emails</li>
-                    </ul>
-                </div>
-                <div id="zero-day" class="content-section">
-                    <h2>Zero-Day Exploits</h2>
-                    <p>Zero-day exploits target vulnerabilities that are unknown to the software vendor. These exploits can be particularly dangerous because there are no patches or fixes available to address the vulnerabilities.</p>
-                    <ul>
-                        <li>Unexplained system behavior</li>
-                        <li>Presence of unknown software or processes</li>
-                        <li>Reports of new vulnerabilities affecting your systems</li>
-                    </ul>
-                </div>
-                <div id="data-breach" class="content-section">
-                    <h2>Data Breaches</h2>
-                    <p>Data breaches involve the unauthorized access and disclosure of sensitive information. These breaches can result in significant financial, legal, and reputational damage to an organization.</p>
-                    <ul>
-                        <li>Unauthorized access to confidential data</li>
-                        <li>Reports of lost or stolen information</li>
-                        <li>Unexpected changes to security settings or configurations</li>
-                    </ul>
-                </div>
-                
-                <!-- Role based content sections -->
-                <div id="executive" class="content-section">
-                    <h2>Executive</h2>
-                    <p id="executive-content">Select an attack type first to view role-based content.</p>
-                </div>
-                <div id="manager" class="content-section">
-                    <h2>Manager</h2>
-                    <p id="manager-content">Select an attack type first to view role-based content.</p>
-                </div>
-                <div id="employee" class="content-section">
-                    <h2>Employee</h2>
-                    <p id="employee-content">Select an attack type first to view role-based content.</p>
-                </div>
-            </div>
+      <div class="col-lg-4 col-md-6 service-item d-flex">
+        <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+        <div>
+          <h4 class="title">Protects Sensitive Data</h4>
+          <p class="description">Cybersecurity prevents unauthorized access to personal and financial information.</p>
         </div>
+      </div>
+      <!-- End Service Item -->
 
-        <div class="right-pane">
-            <div class="right-pane-top" id="action">
-                <h3>Subscribe</h3>
-                <p>Subscribe to our Newsletter:</p>
-                <p><input type="text" placeholder="Your Email.." style="
-    font-family: Arial, sans-serif; /* Font style */
-    font-size: 16px; /* Font size */
-    color: #333; /* Text color */
-    background-color: #f9f9f9; /* Background color */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners */
-    padding: 10px; /* Padding inside the input box */
-    width: 100%; /* Full width */
-    max-width: 300px; /* Maximum width */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-"/></p>
-<button onclick="showContentOnBtn()" style="
-background-color: #00703c; /* Button background color */
-color: white; /* Text color */
-border: none; /* Remove default border */
-border-radius: 10px; /* Rounded corners */
-
-font-size: 16px; /* Font size */
-padding: 5px 15px; /* Padding inside the button */
-cursor: pointer; /* Cursor style when hovering */
-transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and transform transitions */
-">
-
-Subscribe
-</button>
-
-
-            </div>
-            <div class="right-pane-bottom">
-                <h3>References</h3>
-                <ul id="ref">
-                    <li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a></li>
-                    <li><a href="https://www.flsenate.gov/Laws/Statutes/2024/282.3185">Local Government Cybersecurity Act (F.S. 282.3185)</a></li>
-                    <li><a href="https://www.cisa.gov/topics/cybersecurity-best-practices">Cybersecurity Best Practices</a></li>
-                </ul>
-            </div>
-            <br>
-            
-            <div class="right-pane-bottom">
-                <h3>News</h3>
-                <ul>
-                    <li><a href="https://www.usnews.com/news/health-news/articles/2024-05-10/cyberattack-cripples-major-u-s-health-care-network#:~:text=In%20February%2C%20Change%20Healthcare%2C%20a,third%20of%20Americans%2C%20CNN%20reported.">New Ransomware Attack Hits Major Healthcare Providers</a></li>
-                    <li><a href="https://thehackernews.com/2024/05/new-chrome-zero-day-vulnerability-cve.html">Critical Zero-Day Vulnerability Found in Popular Web Browser</a></li>
-                    <li><a href="https://www.foxnews.com/tech/massive-data-breach-exposes-over-3-million-americans-personal-information-cybercriminals">Data Breach Exposes Personal Information of Millions</a></li>
-                </ul>
-            </div>
+      <div class="col-lg-4 col-md-6 service-item d-flex">
+        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+        <div>
+          <h4 class="title">Ensures Business Continuity</h4>
+          <p class="description">Effective cybersecurity measures minimize disruptions caused by cyber-attacks.</p>
         </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex">
+        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+        <div>
+          <h4 class="title">Prevents Financial Loss</h4>
+          <p class="description">Cybersecurity helps avoid the costly consequences of data breaches and fraud.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex">
+        <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+        <div>
+          <h4 class="title">Preserves Reputation everywhere</h4>
+          <p class="description">Protecting against cyber threats maintains the trust of customers and stakeholders.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex">
+        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+        <div>
+          <h4 class="title">Regulatory Compliance</h4>
+          <p class="description">Strong cybersecurity practices ensure compliance with legal and industry standards.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex">
+        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+        <div>
+          <h4 class="title">Safeguards from threats</h4>
+          <p class="description">Continuous cybersecurity efforts defend against evolving cyber threats.</p>
+        </div>
+      </div><!-- End Service Item -->
+
     </div>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </div>
+
+</section><!-- /Services Section -->
+
+<br>
+<section id="skills" class="skills section light-background">
+  <div class="container section-title">
+<h6 style="font-weight: bold;">"Did You Know? 95% of cybersecurity breaches are caused by human error. Stay informed, stay secure."
+</h6>
+<p>Human error is the weakest link in cybersecurity, making awareness and education essential. Simple actions like using strong passwords, being cautious of suspicious emails, and following security protocols can significantly reduce the risk of breaches. Remember, your vigilance is key to protecting sensitive information and maintaining a secure environment.</p>
+</div>
+
+</section>
+<br>
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title">
+    <h3>Your Role in Cybersecurity</h3>
+    <p>Every individual plays a crucial role in maintaining cybersecurity by staying vigilant, following best practices, and promptly reporting any suspicious activity. Your actions directly contribute to protecting sensitive information and ensuring the security of the organization.</p>
+    </div><!-- End Section Title -->
+<br>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+        
+        
+        <div class="resume-item">
+          <div class="row">
+            <div class="col-lg-1">
+              <h1 style="font-size: 3em;;"><i class="bi bi-key"></i></h1>
+            </div>
+            <div class="col-lg-11" style="padding-left: 0px;">
+              <h4 style="color: black;text-transform: capitalize;">Control access</h4>
+            <p>Put controls on databases with sensitive information. Limit access to a need-to-know
+              basis, and only for the amount of time a vendor needs to do a job.</p>
+            </div>
+            </div>
+            <br>
+        </div><!-- Edn Resume Item -->
+        <div class="resume-item">
+          <div class="row">
+            <div class="col-lg-1">
+              <h1 style="font-size: 3em;;"><i class="bi bi-fingerprint"></i></h1>
+            </div>
+            <div class="col-lg-11" style="padding-left: 0px;">
+              <h4 style="color: black;text-transform: capitalize;">Use multi-factor authentication</h4>
+            <p>This makes vendors take additional steps beyond logging in with a password to
+              access your network — like a temporary code on a smartphone or a key that’s
+              inserted into a computer. </p>
+            </div>
+            </div>
+            <br>
+        </div><!-- Edn Resume Item -->
+        <div class="resume-item">
+          <div class="row">
+            <div class="col-lg-1">
+              <h1 style="font-size: 3em;;"><i class="bi bi-router-fill"></i></h1>
+            </div>
+            <div class="col-lg-11" style="padding-left: 0px;">
+              <h4 style="color: black;text-transform: capitalize;">Secure your network</h4>
+            <p>Require strong passwords: at least 12 characters with a mix of numbers, symbols, and
+              both capital and lowercase letters. Never reuse passwords, don’t share them, and
+              limit the number of unsuccessful log-in attempts to limit password-guessing attacks.</p>
+            </div>
+            </div>
+            <br>
+        </div><!-- Edn Resume Item -->
+        <div class="resume-item">
+          <div class="row">
+            <div class="col-lg-1">
+              <h1 style="font-size: 3em;;"><i class="bi bi-file-earmark-break-fill"></i></h1>
+            </div>
+            <div class="col-lg-11" style="padding-left: 0px;">
+              <h4 style="color: black;text-transform: capitalize;">Safeguard your data</h4>
+            <p>Use properly configured, strong encryption. This protects sensitive information as
+              it’s transferred and stored.</p>
+            </div>
+            </div>
+            <br>
+        </div><!-- Edn Resume Item -->
+      </div> 
+    </div>
+
+  </div>
+
+</section><!-- /Resume Section -->
+
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title">
+    <h3 style="">Understanding
+      the NIST Cybersecurity
+      Framework</h3>
+    <p>NIST is the National Institute of Standards and
+      Technology at the U.S. Department of Commerce.
+      The NIST Cybersecurity Framework helps
+      businesses of all sizes better understand,
+      manage, and reduce their cybersecurity risk
+      and protect their networks and data. The
+      Framework is voluntary. It gives your business
+      an outline of best practices to help you decide
+      where to focus your time and money for
+      cybersecurity protection.
+      You can put the NIST Cybersecurity Framework
+      to work in your business in these five areas:
+      Identify, Protect, Detect, Respond, and Recover.</p>
+    </div><!-- End Section Title -->
+<br>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        
+        <section id="skills" class="skills section light-background">
+          <div class="container section-title">
+        <h6 style="font-weight: bold;">1. IDENTIFY
+        </h6>
+        <p>Make a list of all equipment, software, and data
+          you use, including laptops, smartphones, tablets,
+          and point-of-sale devices.<br>Create and share a company cybersecurity
+          policy that covers:</p>
+          <ul>
+            <li>Roles and responsibilities
+              for employees, vendors, and
+              anyone else with access to
+              sensitive data.</li>
+              <li>Steps to take to protect against
+                an attack and limit the damage if
+                one occurs.</li>
+          </ul>
+        </div>
+        
+        </section>
+        
+      </div>
+      <div class="col-lg-6">
+        
+        <section id="skills" class="skills section light-background">
+          <div class="container section-title">
+        <h6 style="font-weight: bold;">2. PROTECT
+        </h6>
+        <ul>
+          <li>Control who logs on to your network and uses your computers and other devices.</li>
+          <li>Use security software to protect data.</li>
+          <li>Encrypt sensitive data, at rest and in transit.</li>
+          <li>Conduct regular backups of data.</li>
+          <li>Update security software regularly, automating those updates if possible.</li>
+          <li>Have formal policies for safely disposing of electronic files and old devices.</li>
+      </ul>
+      
+        </div>
+        
+        </section>
+        
+      </div> 
+    </div>
+
+  </div>
+  
+  <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
+
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h6 style="font-weight: bold;">3. DETECT
+      </h6>
+    </div><!-- End Section Title -->
+  <br>
+    <div class="container">
+  
+      <div class="row gy-4">
+  
+        <div class="col-lg-4 col-md-6 service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-display"></i></div>
+          <div>
+            
+            <p class="description">Monitor your computers
+              for unauthorized personnel
+              access, devices (like USB), and software.</p>
+          </div>
+        </div>
+        <!-- End Service Item -->
+  
+        <div class="col-lg-4 col-md-6 service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-wifi"></i></div>
+          <div>
+            
+            <p class="description">Check your network
+              for unauthorized
+              users or connections.</p>
+          </div>
+        </div><!-- End Service Item -->
+  
+        <div class="col-lg-4 col-md-6 service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-search"></i></div>
+          <div>
+            
+            <p class="description">Investigate any unusual
+              activities on your network
+              or by your staff.</p>
+          </div>
+        </div><!-- End Service Item -->
+  
+        
+  
+      </div>
+  
+    </div>
+  
+  </section><!-- /Services Section -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        
+        <section id="skills" class="skills section light-background">
+          <div class="container section-title">
+        <h6 style="font-weight: bold;">4. RESPOND
+        </h6>
+        <p>Have a plan for:</p>
+        <ul>
+          <li>Notifying customers, employees, and others whose data may be at risk.</li>
+          <li>Keeping business operations up and running.</li>
+          <li>Reporting the attack to law enforcement and other authorities.</li>
+      </ul>
+      
+        </div>
+        
+        </section>
+        
+      </div>
+      <div class="col-lg-6">
+        
+        <section id="skills" class="skills section light-background">
+          <div class="container section-title">
+        <h6 style="font-weight: bold;">5. RESPOND
+        </h6>
+        <p>After an attack:</p>
+        <ul>
+          <li>Repair and restore the equipment and parts of your network that were affected.</li>
+          <li>Keep employees and customers informed of your response and recovery activities.</li>
+      </ul>
+      
+      
+        </div>
+        
+        </section>
+        
+      </div> 
+    </div>
+
+  </div>
+
+</section><!-- /Resume Section -->
+
+      </div><!-- End Section Title -->
+
+      <br>
+      
+    </section><!-- /Portfolio Section -->
+    <!-- Hero Section -->
+   
+      
+
+  
     
+
+    <!-- About Section -->
+    
+
+    <!-- Stats Section -->
+    
+
+    
+
+    <!-- Resume Section -->
+    
+
+    <!-- Portfolio Section -->
+    
+
+    <!-- Services Section -->
+    
+
+    <!-- Testimonials Section -->
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h3>Contact us</h3>
+        <br>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Florida, US</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 000 000 0000</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+  <header id="header" class="header d-flex flex-column" style="right: 0;border-left: 1px solid lightgrey; background-color: #f0f0f0">
+
+    <div style="position: absolute; top: 0;padding-top: 10px;"> 
+      <h5><b>Subscribe:</b></h5>
+      <p>Subscribe to our News Letters</p>
+      <input style="
+        
+      font-size: 16px; /* Font size */
+      color: #333; /* Text color */
+      background-color: white; /* Background color */
+      border: 1px solid #ccc; /* Border style */
+      border-radius: 4px; /* Rounded corners */
+      padding: 8px 12px; /* Padding inside the select box */
+      width: 230px; /* Width of the select box */; "
+      type="text" placeholder="Your Email ID here.." />
+      <button onclick="signupClick()" style="color: white; background-color: #006747;padding-right: 10px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;border: 1px solid #005432;border-radius: 5px;margin-top: 10px;margin-bottom: 10px;">Sign Up</button>
+      <p style="color: #006747;display: none;" id="signup"><b>Awesome! You are signed up to receive our Monthly Newsletters.</b></p>
+      <hr>
+      
+      <h5><b>Our Courses:</b></h5>
+      <ul style="list-style-type: none;padding: 5px;">
+        <li><a href="https://learn.usf-cyber-awareness.org/#/signup" id="mds" target="_blank"><i class="bi bi-bookmark"></i>&nbsp;&nbsp;Awareness Course</a></li>
+        <li><a href="#" id="sbp" target="_blank"><i class="bi bi-bookmark"></i>&nbsp;&nbsp;Executive Course</a></li>
+        <li><a href="#" id="sbp" target="_blank"><i class="bi bi-bookmark"></i>&nbsp;&nbsp;Managerial Course</a></li>
+        
+        
+      </ul>
+      <p></p>
+    </div>
+
+    <div style="position: absolute; bottom: 0;padding-bottom: 20px;"> 
+      <h5><b>News Headlines:</b></h5>
+      <div id="news">
+      
+</div>
+
+      
+    </div>
+    
+
+  </header>
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+ <!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/typed.js/typed.umd.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+<!-- Main JS File -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+  <script>
+    function signupClick(){
+      document.getElementById('signup').style.display = 'block';
+    }
+    function redirectToPage() {
+    // Get the selected values from the dropdowns
+    var role = document.getElementById("role").value;
+    var wtd = document.getElementById("wtd").value;
+    
+    // Construct the URL
+    var newUrl = "/" + role + "_" + wtd;
+    
+    // Redirect to the new URL
+    window.location.href = newUrl;
+}
+  </script>
+  <script>
+    
+        const url = 'https://newsapi.org/v2/everything?q=cybersecurity&apiKey=52de1f3ac06a47049940221310bdda8e&from=2024-07-28&to=2024-08-27&sortBy=popularity&pageSize=50';
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const articles = data.articles;
+                const randomArticles = getRandomArticles(articles, 3);
+
+                let output = '';
+                randomArticles.forEach(article => {
+                    const title = article.title.length > 36 ? article.title.substring(0, 36) + '...' : article.title;
+                    const imageUrl = article.urlToImage ? article.urlToImage : 'https://via.placeholder.com/70';
+                    const source = article.source.name;
+
+                    output += `
+                        <div style="display: flex; width: 250px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 10px; border-radius: 10px; overflow: hidden;">
+                            <div style="flex: 0 0 30%; overflow: hidden;">
+                                <img src="${imageUrl}" alt="News Image" style="height: 70px; width: 70px; object-fit: cover;">
+                            </div>
+                            <div style="flex: 1; padding: 8px; display: flex; align-items: center;">
+                                <a target="_blank" href="${article.url}" style="text-decoration: none; color: black; line-height: 1.2; font-size: 15px;">
+                                    ${title}<br>
+                                    <span style="color: #888; font-size: 12px;">${source}</span>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                document.getElementById('news').innerHTML = output;
+            })
+            .catch(error => {
+                console.error('Error fetching the news:', error);
+            });
+    
+
+    function getRandomArticles(articles, num) {
+        const shuffled = articles.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, num);
+    }
+</script>
+
 </body>
+
 </html>
